@@ -1,11 +1,11 @@
 <div  class="header-container">
-  <p>Luminary</p>
+  <p class="font-bold text-1xl italic font-bold">Luminary</p>
   <div class="header-right">
     <button><i class="bi bi-heart"></i></button>
     <button><i class="bi bi-bag"></i></button>
     <div class="header-right-dropdown">
-      <button>Login</button>
-      <button>Register</button>
+    <app-button label="Login" (onClick)="showLogin()"  />
+     <app-button label="Register" />
     </div>
   </div>
 
