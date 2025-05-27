@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-products-card',
@@ -6,6 +7,11 @@ import { Component } from '@angular/core';
   templateUrl: './products-card.component.html',
   styleUrl: './products-card.component.scss'
 })
-export class ProductsCardComponent {
+export class ProductComponent {
 
+  constructor(private router: Router) {}
+
+  goToWishlist() {
+    this.router.navigate(['/wishlist']);
+  }
 }
