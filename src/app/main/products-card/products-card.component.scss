@@ -1,16 +1,12 @@
 
 .main-content {
     flex: 1;
+    width: 100vw;
+    overflow-x: hidden;
     padding: 30px;
 
   }
-  h1{
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 20px;
-    margin-top: -4rem;
-    margin-left: 3.5rem;
-  }
+ 
 
   .main-content h1 {
     font-size: 32px;
@@ -18,17 +14,17 @@
   }
 
   .product-grid {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 25px;
-    padding-left: 3rem;
+    gap: 2rem;
   }
 
   .product-card {
-    background-color: white;
+    background-color: var( --bg-primary);
     border-radius: 10px;
     padding: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px var(secondary-dark);
     text-align: center;
     position: relative;
   }
@@ -46,11 +42,13 @@
   }
 
   .product-card p {
-    color: #555;
+    color: var(--text-secondary );
     font-weight: bold;
   }
+
+
 .add-to-wishlist i{ 
-    color: black;
+    color: var( --primary-dark);
 
     font-size: 1.5rem;
     cursor: pointer;
@@ -66,19 +64,19 @@
 
   .product-card .price {
     font-size: 16px;
-    color: #333;
+    color: var(--secondary-dark);
     margin-bottom: 10px;
   }
 
   .product-card .description {
-    font-size: 14px;
-    color: #777;
+    font-size: 1rem;
+    color: var(--secondary-main);
     margin-bottom: 15px;
     margin-top: 2rem;
   }
 
   .product-card .rating {
-    margin-right: -25rem;
+    margin-right: -27rem;
     margin-bottom: 10px;
     margin-top: -2.5rem;
   }
@@ -93,14 +91,14 @@
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: #000;
-    color: #fff;
+    background-color: var( --secondary-dark);
+    color: var(--text-inverse );
     cursor: pointer;
     font-size: 16px;
   }
 
   .product-card button:hover {
-    background-color: #333;
+    background-color: var( --primary-light );
 
 
 
@@ -122,13 +120,13 @@
   }
 
   .add-cart {
-    background-color: #000;
-    color: #fff;
+    background-color: var( --secondary-dark);
+    color: var(--text-inverse );
   }
 
   .buy-now {
-    background-color: #fff;
-    border: 1px solid #000;
+    background-color: var(--text-inverse );
+    border: 1px solid var( --secondary-dark);
   }
  
   

@@ -8,16 +8,15 @@
     margin-top: 2rem;
     justify-content: center;
     align-items: center;
-
-  
-
+    height: 6rem;
+    background-color: red;
 }
 
 .search{
     width: 10rem;
-    background-color: black;
-    color: white;
-    border: 1px solid black;
+    background-color: var( --secondary-dark);
+    color: var( --text-inverse);
+    border: 1px solid var( --secondary-dark);
     border-radius: 50px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -30,7 +29,7 @@
 input[type="search"] {
     width: 25rem;
     padding: 12px;
-    border: 1px solid #0c0606;
+    border: 1px solid var( --secondary-dark);
     border-radius: 50px;
     margin-bottom: 20px;
 
