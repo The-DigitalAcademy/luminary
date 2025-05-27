@@ -18,4 +18,9 @@ export class HeaderComponent {
     this.router.navigate(['/login']);
   }
 
+  showRegister() {
+    console.log('register');
+    this.router.navigate(['/register']);
+  }
+
 }
