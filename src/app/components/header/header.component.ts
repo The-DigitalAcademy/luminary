@@ -16,11 +16,12 @@ export class HeaderComponent {
   showLogin() {
     console.log('Login');
     this.router.navigate(['/login']);
-  }
-
+  }   
+  
   showRegister() {
     console.log('register');
     this.router.navigate(['/register']);
   }
+
 
 }
