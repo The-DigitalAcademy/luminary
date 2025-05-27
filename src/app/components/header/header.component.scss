@@ -1,0 +1,25 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+.header-container .header-right {
+    display: flex;
+    align-items: center;
+}
+.header-container .header-right button {
+    margin-left: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.header-container .header-right button:hover {
+    color: rgb(0, 0, 0);
+}
+.header-container .header-right button i {
+    font-size: 1.5rem;
+}
+
