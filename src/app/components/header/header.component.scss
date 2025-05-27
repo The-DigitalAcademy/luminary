@@ -34,6 +34,9 @@
 .header-container .header-right {
     display: flex;
     align-items: center;
+    margin-right: 3rem;
+    gap: 1rem;
+    // background-color: red;
 }
 .header-container .header-right button {
     display: flex;
@@ -48,17 +51,25 @@
 .header-container .header-right button i {
     font-size: 1.5rem;
 }
-.header-right-dropdown button{
-    padding: 8px 12px;
-    gap: 1rem;
+.header-right-dropdown app-button{
+    padding: 10px 10px;
+    border-radius: 15px;
     font-size: 16px;
-  
+    background-color: var(--secondary-dark);
+    margin-left: 1rem;
+    color: var(--text-inverse);
+   
 }
+
+// .header-container .header-right .header-right-dropdown{
+//     gap: 1rem;
+// }
+
 
 .header-container .header-right .header-right-dropdown button{
   
     align-items: center;
-    background-color: var(--secondary-dark);
+    // background-color: var(--secondary-dark);
     border: none;
     cursor: pointer;
     border-radius: 6px;
