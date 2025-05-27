@@ -1,7 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");/* You can add global styles to this file, and also import other style files */
 
+:root {
+    /* Primary Palette */
+    --primary-main: #2E2E2E;
+    --primary-light: #333;
+    --primary-dark: #0c0606;
+  
+    /* Secondary Palette */
+    --secondary-main: #666;
+    --secondary-light: #ccc;
+    --secondary-dark: #000;
+  
+    /* Tertiary Palette */
+    --tertiary-main: #e0e0e0;
+    --tertiary-light: #f0f0f0;
+    --tertiary-dark: #ddd;
+  
+    /* Text Colors */
+    --text-primary: #2E2E2E;
+    --text-secondary: #666;
+    --text-inverse: #fff;
+  
+    /* Background Colors */
+    --bg-primary: #fff;
+    --bg-secondary: #f0f0f0;
+    --bg-dark: #0c0606;
+  
+    /* Border Colors */
+    --border-light: #ccc;
+    --border-subtle: #ddd;
+    --font-lexend: "Lexend", sans-serif;
+  }
 
+
+  
+.lexend-light {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:300;
+    font-style: normal;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
 body{
     background-color: #f0f0f0;
+    font-family: var(--font-lexend);
+    // overflow-x: hidden !important;
 }
+
