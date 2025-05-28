@@ -1062,7 +1062,7 @@
       "category": "laptops",
       "price": 11999.99,
       "discountPercentage": 17.41,
-      "rating": 5.00,
+      "rating": 5,
       "stock": 20,
       "tags": [
         "laptops",
@@ -1796,7 +1796,6 @@
         "https://www.incredible.co.za/api/catalog/product/m/a/matebook_mb_3_ecommerce_7212.png?width=700&height=700&store=incredibleconnection&image-type=image"
       ],
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/h/u/huawei_d16_dmp_fv_ecommerce_2056.png?width=700&height=700&store=incredibleconnection&image-type=image"
-      
     },
     {
       "id": 151,
@@ -1919,7 +1918,6 @@
         "https://www.incredible.co.za/api/catalog/product/s/3/s3422dwg_xfp_02_bk_ecommerce_d8be.png?width=700&height=700&store=incredibleconnection&image-type=image",
         "https://www.incredible.co.za/api/catalog/product/s/3/s3422dwg_xfp_05_bk_ecommerce_12b4.png?width=700&height=700&store=incredibleconnection&image-type=image",
         "https://www.incredible.co.za/api/catalog/product/s/3/s3422dwg_xfp_06_bk_ecommerce_ab78.png?width=700&height=700&store=incredibleconnection&image-type=image"
-
       ],
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/s/3/s3422dwg_xfp_01_bk_ecommerce_4511.png?width=700&height=700&store=incredibleconnection&image-type=image"
     },
@@ -1983,7 +1981,6 @@
         "https://www.incredible.co.za/api/catalog/product/4/7/4711121821219_2493769_ecommerce_a374.png?width=700&height=700&store=incredibleconnection&image-type=image",
         "https://www.incredible.co.za/api/catalog/product/4/7/4711121821219_2493767_ecommerce_dee2.png?width=700&height=700&store=incredibleconnection&image-type=image",
         "https://www.incredible.co.za/api/catalog/product/4/7/4711121821219_2493770_ecommerce_9a3c.png?width=700&height=700&store=incredibleconnection&image-type=image"
-
       ],
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/n/i/nitro_27__gaming_monitor_01_ecommerce_cf09.png?width=700&height=700&store=incredibleconnection&image-type=image"
     },
@@ -2047,26 +2044,24 @@
         "https://media.takealot.com/covers_images/3cbfda55e6344607b6d908a2c858290e/s-zoom.file",
         "https://media.takealot.com/covers_images/97c2acc0776e42faaef28e5cec0a0c45/s-zoom.file",
         "https://media.takealot.com/covers_images/d4a53835e68743e5b0abf9d9ea0ea4f7/s-zoom.file"
-
       ],
       "thumbnail": "https://media.takealot.com/covers_images/67add045d2b94194be72160ff0f28467/s-zoom.file"
     }
-
   ],
   "users": [
     {
-      "id": 1,
-      "name": "John",
-      "surname": "Doe",
-      "email": "john.doe@gmail.com",
-      "password": "123456"
+      "id": "4f83",
+      "name": "Thulani ",
+      "surname": "Nyombolo",
+      "email": "thulaninyombolo@gmail.com",
+      "password": "12345678"
     },
     {
-      "id": 2,
-      "name": "Jane",
-      "surname": "Smith",
-      "email": "jane.smith@gmail.com",
-      "password": "12345678"
+      "id": "dc4a",
+      "name": "Mamello",
+      "surname": "Mellow",
+      "email": "mellow@gmail.com",
+      "password": "1234qwer"
     }
   ]
 }

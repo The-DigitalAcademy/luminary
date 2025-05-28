@@ -1,58 +1,50 @@
 import { UserService } from './../../services/user.service';
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ButtonComponent } from '../../components/button/button.component';
-import { error } from 'console';
+import { User } from './user';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [ButtonComponent],
+  imports: [ButtonComponent, FormsModule, CommonModule],
   templateUrl: './register.component.html',
   styles: ``
 })
 export class RegisterComponent {
-  name = '';
-  surname = '';
-  email = '';
-  password = '';
+
+
+  router = inject(Router);
+  userService = inject(UserService);
+
+  user: User = {
+    name : '',
+    surname : '',
+    email : '',
+    password : '',
+  }
   confirmPassword = '';
-  errorMessage = signal('');
 
-  constructor(private router: Router,
-    private userService: UserService) {}
-  
-  
   onSubmit() {
-    if (this.password !== this.confirmPassword) {
-      this.errorMessage.set('Passwords do not match.');
-      return;
-    }
-
-    this.userService.checkEmail(this.email).subscribe((users) => {
-      if (users.length > 0) {
-        this.errorMessage.set('Email already exists.');
-        return;
-      }else{
-        const newUser = {
-          name: this.name,
-          surname: this.surname,
-          email: this.email,
-          password: this.password
-        };
-        this.userService.register(newUser).subscribe({
-          next: () => {this.router.navigate(['/login']);
-            this.errorMessage.set('User registered successfully.');
-          },
-          error:(error) => {
-          this.errorMessage.set('Error registering user.'); 
-          console.log(error);
+    if(!this.user.name || !this.user.surname || !this.user.email || !this.user.password || !this.confirmPassword){
+      alert('Please fill all the fields');
+    }else if(this.user.password !== this.confirmPassword){
+      alert('Passwords do not match');
+    }else if(this.user.password.length < 6){
+      alert('Password must be at least 6 characters long');
+    }else{
+      this.userService.register(this.user).subscribe(user => {
+        if(user){
+          alert('User registered successfully');
+          this.router.navigate(['/login']);
+          this.user.name = '';
+          this.user.surname = '';
+          this.user.email = '';
+          this.user.password = '';
         }
       });
     }
-  });
-}
-navigateToLogin() {
-  this.router.navigate(['/login']);
 }
 }

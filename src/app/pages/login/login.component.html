@@ -2,13 +2,13 @@
     <div class="text-center justtify-center items-center gap-10">
 
 
-    <form class="mt-30 flex flex-col gap-5 mx-[3rem]">
+    <form class="mt-30 flex flex-col gap-5 mx-[3rem]" (ngSubmit)="onSubmit()">
       <div class="text-center font-bold text-2xl mt-30">
         Login
       </div>
-      <input type="text" placeholder="Email" class="border-2 border-gray-400 rounded-lg p-2 outline-none">
-      <input type="password" placeholder="Password" class="border-2 border-gray-400 rounded-lg p-2 outline-none">
-     <app-button type="submit" label="Login" (onClick)="onSubmit()" class=" text-center bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-2 px-4 rounded-lg" />
+      <input type="text" placeholder="Email" name="email" class="border-2 border-gray-400 rounded-lg p-2 outline-none" [(ngModel)]="currentUser.email">
+      <input type="password" placeholder="Password" name="password" class="border-2 border-gray-400 rounded-lg p-2 outline-none" [(ngModel)]="currentUser.password">
+     <app-button type="submit" label="Login" class=" text-center bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold py-2 px-4 rounded-lg" />
     </form><br>
     <p>Don't have an account? <a href="/register" class="text-slate-500 hover:underline">Register</a></p>
 </div>
