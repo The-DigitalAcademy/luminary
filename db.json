@@ -2052,5 +2052,21 @@
       "thumbnail": "https://media.takealot.com/covers_images/67add045d2b94194be72160ff0f28467/s-zoom.file"
     }
 
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John",
+      "surname": "Doe",
+      "email": "john.doe@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "surname": "Smith",
+      "email": "jane.smith@gmail.com",
+      "password": "12345678"
+    }
   ]
 }

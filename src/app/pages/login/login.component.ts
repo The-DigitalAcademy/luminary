@@ -1,6 +1,7 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { ButtonComponent } from "../../components/button/button.component";
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -10,11 +11,32 @@ import { ButtonComponent } from "../../components/button/button.component";
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-  router = inject(Router);
+email = '';
+  password = '';
+  errorMessage = signal('');
 
-  login() {
-    console.log('Login');
-    this.router.navigate(['/home']);
+  constructor(
+    private router: Router,
+    private userService: UserService
+  ) {}
+
+  onSubmit() {
+    this.userService.checkEmail(this.email).subscribe(users => {
+      const user = users[0];
+      
+      if (!user) {
+        this.errorMessage.set('Email not found');
+      } else if (user.password !== this.password) {
+        this.errorMessage.set('Incorrect password');
+      } else {
+        localStorage.setItem('currentUser', JSON.stringify(user));
+        this.router.navigate(['/home']);
+      }
+    });
+  }
+
+  navigateToRegister() {
+    this.router.navigate(['/register']);
   }
 
 
