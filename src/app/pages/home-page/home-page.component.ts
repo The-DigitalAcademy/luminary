@@ -5,11 +5,10 @@ import { HeaderComponent } from '../../components/header/header.component';
 import { ProductsCardComponent } from '../../main/products-card/products-card.component';
 import { FooterComponent } from '../../main/footer/footer.component';
 import { SearchComponent } from '../../main/search/search.component';
-import { ViewproductsComponent } from '../viewproducts/viewproducts.component';
 
 @Component({
   selector: 'app-home-page',
-  imports: [HeaderComponent, CategoryComponent, ProductsCardComponent, FooterComponent, SearchComponent,ViewproductsComponent],
+  imports: [HeaderComponent, CategoryComponent, ProductsCardComponent, FooterComponent, SearchComponent],
   templateUrl: './home-page.component.html',
   styles: ``
 })
