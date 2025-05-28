@@ -11,6 +11,8 @@ import { Product } from '../../models/product.model';
       <app-product-card [product]="product" />
       }
     </div>
+
+    <div class="bg-red-500 p-8">Test</div>
   `,
   imports: [ProductCardComponent],
 })

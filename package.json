@@ -21,13 +21,15 @@
     "@angular/router": "^19.2.0",
     "@angular/ssr": "^19.2.11",
     "@tailwindcss/postcss": "^4.1.7",
+    "@tailwindcss/vite": "^4.1.8",
     "express": "^4.18.2",
     "luminary-app": "file:",
     "postcss": "^8.5.3",
     "rxjs": "~7.8.0",
-    "tailwindcss": "^4.1.7",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^4.1.8",
     "tslib": "^2.3.0",
-    "zone.js": "~0.15.0"
+    "zone.js": "^0.15.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^19.2.11",
