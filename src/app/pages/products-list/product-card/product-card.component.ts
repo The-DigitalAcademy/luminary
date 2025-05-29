@@ -1,8 +1,9 @@
 import { Component, Input, ViewChild} from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 import { Product } from '../../../models/product.model';
 import { CartService } from '../../../services/cart.service';
 import { WishlistService } from '../../../services/wishlist.service';
+import { CheckoutService } from '../../../services/checkout.service';
 import { NotificationBannerComponent } from '../../../components/notification/notification-banner.component';
 import { PrimaryButtonComponent } from '../../../components/primary-button/primary-button.component';
 import { CommonModule } from '@angular/common';
@@ -34,7 +35,7 @@ import { CommonModule } from '@angular/common';
         <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all active:scale-90" (click)="addToCart()">
           <i class="bi bi-bag-fill"></i> Add to Cart
         </button>
-        <button [routerLink]="['/checkout', product.id] " class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-200 hover:text-gray-600 transition-all">
+        <button (click)="buyNow()" class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-200 hover:text-gray-600 transition-all">
         <i class="bi bi-cart2"></i> Buy Now
         </button>
       </div>
@@ -49,7 +50,7 @@ export class ProductCardComponent {
   @ViewChild(NotificationBannerComponent) banner!: NotificationBannerComponent;
 
 
-  constructor(private cartService: CartService, private wishlistService: WishlistService) {}
+  constructor(private router: Router, private cartService: CartService, private wishlistService: WishlistService, private checkoutService: CheckoutService) {}
   
   addToCart(): void {
     if (this.cartService.isProductInCart(this.product)) {
@@ -70,5 +71,10 @@ export class ProductCardComponent {
 
   isInWishlist(): boolean {
     return this.wishlistService.isInWishlist(this.product);
+  }
+
+  buyNow(): void {
+  this.checkoutService.setProduct(this.product); 
+  this.router.navigate(['/checkout']);
   }
 }
