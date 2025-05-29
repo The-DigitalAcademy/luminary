@@ -5,19 +5,17 @@
   import { WishlistService } from '../../services/wishlist.service';
   import { ProductService } from '../../services/product.service';
   import { HeaderComponent } from "../../components/header/header.component";
-import { ProductCardComponent } from "../products-list/product-card/product-card.component";
-import { ProductsListComponent } from "../products-list/products-list.component";
+  import { ProductsListComponent } from "../products-list/products-list.component";
 
   @Component({
     selector: 'app-home-page',
     standalone: true,
-    imports: [HeaderComponent, ProductCardComponent, ProductsListComponent],
+    imports: [HeaderComponent, ProductsListComponent],
     template: `
-      <div class=" h-dvh w-screen bg-gray-500">
+      <div class="bg-slate-100 h-dvh w-screen">
         <app-header></app-header>
-        <div class="mx-[3rem]">
+        <div class= "bg-slate-50 mx-[3rem]">
           <app-products-list/>
-          <app-product-card/>
         </div>
       </div>
 

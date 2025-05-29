@@ -12,7 +12,6 @@ import { Product } from '../../models/product.model';
       }
     </div>
 
-    <div class="bg-red-500 p-8">Test</div>
   `,
   imports: [ProductCardComponent],
 })
