@@ -10,7 +10,7 @@ import { User } from './user';
   standalone: true,
   imports: [ ButtonComponent, FormsModule, CommonModule],
   template: `
-    <div class="bg-slate-50 h-[35rem] w-[25rem] flex flex-col mx-auto mt-[12rem] rounded-lg shadow-md">
+    <div class="bg-slate-50 h-[35srem] w-[25rem] flex flex-col mx-auto mt-[12rem] rounded-lg shadow-md">
 
       <app-button label="X" class="justify-self-end text-lg font-bold text-center ml-84 mt-[1rem] "  (onClick)="closeRegister()" />
       <div class="flex flex-col items-center">
