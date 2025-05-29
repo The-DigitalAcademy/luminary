@@ -10,7 +10,7 @@ import { ButtonComponent } from '../button/button.component';
   imports: [ PrimaryButtonComponent,  RouterLink, ButtonComponent ],
   template: `
     <div
-      class="bg-slate-50 shadow-lg border-b border-gray-200 flex justify-between sticky top-0 z-50 px-[6rem] py-[.5rem] rounded-b-md"
+      class="bg-slate-50 w-full shadow-lg border-b border-gray-200 flex justify-between sticky top-0 z-50 px-[6rem] py-[.5rem] rounded-b-md"
     >
      <div class=" mt-[.5rem] justify-center items-center mx-[1rem]">
          <button
@@ -43,11 +43,12 @@ import { ButtonComponent } from '../button/button.component';
           <app-button
            class=" bg-slate-300 text-center font-bold my-1 mx-1 rounded-lg"
             label="Login"
-            (onClick)="showLogin()"
+            (onClick)="navigateToLogin()"
           />
           <app-button
             class=" bg-slate-300 text-center font-bold my-1 mx-1 rounded-lg"
             label="Register"
+            (onClick)="navigateToRegister()"
           />
         </div>
     </div>
@@ -61,5 +62,10 @@ export class HeaderComponent {
 
   cartLabel = computed(() => `${this.cartService.cart().length}`);
 
-  showLogin(){this.router.navigate(['/login']);}
+   navigateToLogin() {
+    this.router.navigate(['/login']);
+  }
+    navigateToRegister() {
+    this.router.navigate(['/register']);
+  }
 }
