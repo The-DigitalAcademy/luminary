@@ -34,7 +34,7 @@ import { CommonModule } from '@angular/common';
         <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all active:scale-90" (click)="addToCart()">
           <i class="bi bi-bag-fill"></i> Add to Cart
         </button>
-        <button routerLink="/checkout" class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-200 hover:text-gray-600 transition-all">
+        <button [routerLink]="['/checkout', product.id] " class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-200 hover:text-gray-600 transition-all">
         <i class="bi bi-cart2"></i> Buy Now
         </button>
       </div>
