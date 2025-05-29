@@ -17,5 +17,5 @@ export const routes: Routes = [
 
   { path: 'wishlist', component: WishlistComponent },
 
-  { path: 'checkout', component: CheckoutComponent },
+  { path: 'checkout/:id', component: CheckoutComponent },
 ];
