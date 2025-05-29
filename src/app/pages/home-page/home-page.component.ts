@@ -15,7 +15,7 @@ import { ProductsListComponent } from "../products-list/products-list.component"
     template: `
       <div class=" h-dvh w-screen bg-gray-500">
         <app-header></app-header>
-        <div>
+        <div class="mx-[3rem]">
           <app-products-list/>
           <app-product-card/>
         </div>
