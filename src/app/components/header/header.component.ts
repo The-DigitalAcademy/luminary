@@ -13,9 +13,10 @@ import { UserService } from '../../services/user.service';
     <div
       class="bg-slate-50 w-full shadow-lg border-b border-gray-200 flex justify-between sticky top-0 z-50 px-[6rem] py-[.5rem] rounded-b-md"
     >
-     <div class=" mt-[.5rem] justify-center items-center mx-[1rem]">
+     <div class=" mt-[.5rem] flex gap-4 justify-center items-center mx-[1rem]">
+        <img src="./Luminary-logo.png" class="w-16 h-16 object-cover rounded-full" />
          <button
-        class=" text-2xl justify-center self-center italic font-bold tracking-wide text-gray-800 hover:text-slate-300"
+        class=" text-2xl justify-center self-center italic font-bold tracking-wide text-gray-800 hover:text-blue-800"
         routerLink="/"
       >
         Luminary
@@ -43,19 +44,19 @@ import { UserService } from '../../services/user.service';
           <app-primary-button label="{{ cartLabel() }}" routerLink="/cart" />
           @if(userService.currentUser()) {
             <app-button
-           class=" bg-slate-300 text-center  my-1 mx-1 rounded-lg"
+           class="  text-center  my-1 mx-1 rounded-lg"
             label="Logout"
             (onClick)="navigateToHome()"
           />
           <span class="self-center">Welcome, {{this.userService.currentUser()?.firstName}}</span>
           }@else {
                 <app-button
-           class=" bg-slate-300 text-center  my-1 mx-1 rounded-lg"
+           class="  text-center  my-1 mx-1 rounded-lg"
             label="Login"
             (onClick)="navigateToLogin()"
           />
           <app-button
-            class=" bg-slate-300 text-center my-1 mx-1 rounded-lg"
+            class="  text-center my-1 mx-1 rounded-lg"
             label="Register"
             (onClick)="navigateToRegister()"
           />

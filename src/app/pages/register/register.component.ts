@@ -26,7 +26,7 @@ import { UserService } from '../../services/user.service';
             <input type="password" placeholder="Password" name="password" [(ngModel)]="user.password" class="w-full px-2 py-1 border text-center border-gray-300 rounded-md focus:outline-none" />
             <input type="password" placeholder="Confirm Password" name="confirmPassword" [(ngModel)]="confirmPassword" class="w-full px-2 py-1 border text-center border-gray-300 rounded-md focus:outline-none" />
 
-            <app-button type="submit" label="Register" class=" bg-slate-300 text-center font-bold py-1 px-2 rounded-lg" />
+            <app-button type="submit" label="Register" class=" text-center  py-2 px-1 rounded-lg" />
          </form>
          <br>
          <p>Already have an account? <a href="/login" class="text-slate-500 hover:underline">Login</a></p>
@@ -54,6 +54,14 @@ export class RegisterComponent {
   onSubmit() {
     if(!this.user.firstName || !this.user.lastName || !this.user.email || !this.user.password || !this.confirmPassword){
       alert('Please fill all the fields');
+    }else if(this.userService.checkEmail(this.user.email)){
+      alert('User email already exists');
+          this.user.firstName = '';
+          this.user.lastName = '';
+          this.user.username = '';
+          this.user.email = '';
+          this.user.password = '';
+          this.confirmPassword = '';
     }else if(this.user.password !== this.confirmPassword){
       alert('Passwords do not match');
     }else if(this.user.password.length < 6){
@@ -68,6 +76,7 @@ export class RegisterComponent {
           this.user.username = '';
           this.user.email = '';
           this.user.password = '';
+          this.confirmPassword = ''
         }
       });
     }
