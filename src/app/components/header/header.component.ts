@@ -3,6 +3,7 @@ import { CartService } from '../../services/cart.service';
 import { Router, RouterLink } from '@angular/router';
 import { PrimaryButtonComponent } from '../primary-button/primary-button.component';
 import { ButtonComponent } from '../button/button.component';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-header',
@@ -40,7 +41,15 @@ import { ButtonComponent } from '../button/button.component';
             <i class="bi bi-heart"></i>
           </button>
           <app-primary-button label="{{ cartLabel() }}" routerLink="/cart" />
-          <app-button
+          @if(userService.currentUser()) {
+            <app-button
+           class=" bg-slate-300 text-center font-bold my-1 mx-1 rounded-lg"
+            label="Logout"
+            (onClick)="navigateToHome()"
+          />
+          <span class="self-center">Welcome, {{this.userService.currentUser()?.firstName}}</span>
+          }@else {
+                <app-button
            class=" bg-slate-300 text-center font-bold my-1 mx-1 rounded-lg"
             label="Login"
             (onClick)="navigateToLogin()"
@@ -50,6 +59,8 @@ import { ButtonComponent } from '../button/button.component';
             label="Register"
             (onClick)="navigateToRegister()"
           />
+          }
+
         </div>
     </div>
   `,
@@ -59,6 +70,7 @@ import { ButtonComponent } from '../button/button.component';
 export class HeaderComponent {
   cartService = inject(CartService);
   router = inject(Router);
+  public userService = inject(UserService);
 
   cartLabel = computed(() => `${this.cartService.cart().length}`);
 
@@ -68,4 +80,9 @@ export class HeaderComponent {
     navigateToRegister() {
     this.router.navigate(['/register']);
   }
+
+  navigateToHome(){
+    this.userService.logout();
+  }
+
 }
