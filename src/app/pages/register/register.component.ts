@@ -51,7 +51,7 @@ export class RegisterComponent {
   confirmPassword = '';
 
   onSubmit() {
-    if(!this.user.name || !this.user.surname || !this.user.email || !this.user.password || !this.confirmPassword){
+    if(!this.user.firstName || !this.user.lastName || !this.user.email || !this.user.password || !this.confirmPassword){
       alert('Please fill all the fields');
     }else if(this.user.password !== this.confirmPassword){
       alert('Passwords do not match');
@@ -61,9 +61,10 @@ export class RegisterComponent {
       this.userService.register(this.user).subscribe(user => {
         if(user){
           alert('User registered successfully');
-          this.router.navigate(['/login']);
-          this.user.name = '';
-          this.user.surname = '';
+          this.router.navigate(['/home']);
+          this.user.firstName = '';
+          this.user.lastName = '';
+          this.user.username = '';
           this.user.email = '';
           this.user.password = '';
         }
