@@ -11,9 +11,9 @@ import { UserService } from '../../services/user.service';
   imports: [ PrimaryButtonComponent,  RouterLink, ButtonComponent ],
   template: `
     <div
-      class="bg-slate-50 w-full shadow-lg border-b border-gray-200 justify-between sticky top-0 z-50 px-[6rem] py-[.5rem] rounded-b-md"
+      class="bg-slate-50 w-full shadow-lg border-b border-gray-200 flex justify-between sticky top-0 z-50 px-[6rem] py-[.5rem] rounded-b-md"
     >
-     <div class=" mt-[.5rem] flex gap-4 justify-center items-center mx-[1rem]">
+     <div class=" mt-[.5rem] justify-center items-center mx-[1rem]">
          <button
         class=" text-2xl justify-center self-center italic font-bold tracking-wide text-gray-800 hover:text-blue-800"
         routerLink="/"
@@ -25,7 +25,7 @@ import { UserService } from '../../services/user.service';
         <input
           type="text"
           placeholder="Search products..."
-          class="w-1/1 px-2 py-.5 border border-gray-300 rounded-md focus:outline-none mx-[.5rem]"
+          class="w-1/1 px-2 py-.5 border border-gray-300 rounded-md focus:outline-none"
         />
         <button
           class="bg-slate-100 text-black px-2 py-.5 rounded-md hover:bg-slate-300 transition-all flex items-center gap-2"
@@ -33,7 +33,7 @@ import { UserService } from '../../services/user.service';
           <i class="bi bi-search"></i>
         </button>
       </div>
-       <div class="flex items-center gap-4 mx-[1rem]">
+       <div class="flex items-center gap-3 mx-[1rem]">
           <button
             routerLink="/wishlist"
             class="bg-transparent text-gray-700 mx-2 my-2 rounded-md hover:bg-gray-100 transition-all flex items-center gap-2"
