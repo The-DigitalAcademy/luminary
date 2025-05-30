@@ -11,10 +11,9 @@ import { UserService } from '../../services/user.service';
   imports: [ PrimaryButtonComponent,  RouterLink, ButtonComponent ],
   template: `
     <div
-      class="bg-slate-50 w-full shadow-lg border-b border-gray-200 flex justify-between sticky top-0 z-50 px-[6rem] py-[.5rem] rounded-b-md"
+      class="bg-slate-50 w-full shadow-lg border-b border-gray-200 justify-between sticky top-0 z-50 px-[6rem] py-[.5rem] rounded-b-md"
     >
      <div class=" mt-[.5rem] flex gap-4 justify-center items-center mx-[1rem]">
-        <img src="./Luminary-logo.png" class="w-16 h-16 object-cover rounded-full" />
          <button
         class=" text-2xl justify-center self-center italic font-bold tracking-wide text-gray-800 hover:text-blue-800"
         routerLink="/"
