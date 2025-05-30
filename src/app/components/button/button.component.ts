@@ -5,7 +5,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   imports: [],
   template: `
     <button
-      class=" text-slate-800 px-2 py-1.5 rounded-lg transition-all"
+      class=" bg-gray-500 text-white px-2 py-1 rounded-lg hover:bg-gray-200 hover:text-gray-600 transition-all"
       (click)="onClick.emit($event)"
     >
       <span class="text-md">{{label}}</span>

@@ -43,19 +43,19 @@ import { UserService } from '../../services/user.service';
           <app-primary-button label="{{ cartLabel() }}" routerLink="/cart" />
           @if(userService.currentUser()) {
             <app-button
-           class=" bg-slate-300 text-center font-bold my-1 mx-1 rounded-lg"
+           class=" bg-slate-300 text-center  my-1 mx-1 rounded-lg"
             label="Logout"
             (onClick)="navigateToHome()"
           />
           <span class="self-center">Welcome, {{this.userService.currentUser()?.firstName}}</span>
           }@else {
                 <app-button
-           class=" bg-slate-300 text-center font-bold my-1 mx-1 rounded-lg"
+           class=" bg-slate-300 text-center  my-1 mx-1 rounded-lg"
             label="Login"
             (onClick)="navigateToLogin()"
           />
           <app-button
-            class=" bg-slate-300 text-center font-bold my-1 mx-1 rounded-lg"
+            class=" bg-slate-300 text-center my-1 mx-1 rounded-lg"
             label="Register"
             (onClick)="navigateToRegister()"
           />
