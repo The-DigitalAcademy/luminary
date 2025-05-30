@@ -995,7 +995,7 @@
     },
     {
       "id": 148,
-      "title": "Samsung Galaxy S25 Ultra 256GB ",
+      "title": "Samsung Galaxy S25 Ultra",
       "description": "Simple. Impactful. Galaxy S25 Ultra's rounded design expresses a unified identity for the Galaxy S series. With its sleek and strong titanium frame and a built-in S Pen, it's an ultra-modern, vision of bold design Looks sleek. Built tough, Ultra-strong titanium: Shielded in a strong titanium frame, your Galaxy S25 Ultra always stays protected. Galaxy's toughest glass ever: Reinforced by our durable Corning® Gorilla® Armor 2 display glass ready to protect your Galaxy. Stay water resistant: With an IP68 rating, water and dust resistance lets you take this Galaxy further than you thought possible. Advanced AI ProVisual Engine. Our next-gen ProVisual Engine is now boosted by our powerful processor—allowing you to capture, view and edit for our best camera and editing experience yet. 12 MP Selfie Camera, 50 MP Ultra Wide,200 MP Wide-angle | 2x Optical Quality Zoom,  50 MP Telephoto | 5x Optical Zoom & 10x Optical Quality Zoom, 10 MP Telephoto | 3x Optical Zoom. The most powerful processor, customized for Galaxy. Introducing our most powerful processor, customized for Galaxy. With improved real-time ray tracing and Vulkan optimization, dive deep into the action with ultra-smooth gameplay thanks to Snapdragon® 8 Elite Mobile Platform for Galaxy.",
       "category": "smartphones",
       "price": 999.99,
@@ -1057,7 +1057,7 @@
     },
     {
       "id": 155,
-      "title": "Google Pixel 9 Pro 128GB",
+      "title": "Google Pixel 9 Pro",
       "description": "Google Pixel 9 Pro: All Pro. Pure Magic. Experience the most powerful Pixel yet, powered by Google Tensor G4 and Gemini AI assistant. From pro-level photos and video to unmatched AI capabilities, the Pixel 9 Pro is designed to elevate your everyday life. With a bright Super Actual display, powerhouse performance, and an all-day battery, the Pixel 9 Pro combines innovation, durability, and style in one stunning device.",
       "category": "smartphones",
       "price": 1899.99,
@@ -1120,7 +1120,7 @@
     },
     {
       "id": 137,
-      "title": "HP 15s Intel® Core™ i7 1255U ",
+      "title": "HP 15s Intel® Core™ i7",
       "description": "Elevate your productivity and mobility with the HP 15.6 Laptop PC, designed for your convenience. Whether you're on the go or working from your favorite spot, this laptop empowers you to do your thing, all day, and wherever you prefer. No matter your needs, the HP 15.6 Laptop PC is designed to meet them. It's the perfect blend of style, portability, and performance. Elevate your computing experience with a laptop that's ready to keep up with your demands, all day long.",
       "category": "laptops",
       "price": 3999.99,
@@ -1244,7 +1244,7 @@
     },
     {
       "id": 140,
-      "title": "Strix G16 Intel® Core™ i9 14900HX",
+      "title": "Strix G16 Intel® Core™ i9",
       "description": "Power through any game or project with an Intel® Core™ i9 Processor 14900HX, featuring up to a 65W TDP and a hybrid architecture built from the ground up for Windows 11 Pro. With up to 8 Performance-cores and 16 Efficient-cores and Intel's latest Application Optimization technology increasing frames rates to up to 40% in supported titles, AAA gaming is flawless and streaming is effortless.",
       "category": "laptops",
       "price": 8499.99,
@@ -1306,8 +1306,8 @@
     },
     {
       "id": 141,
-      "title": "Packard Bell Montenero-C Intel® Celeron®",
-      "description": "The Packard Bell Montenero-C Laptop is always within reach, get it done anywhere, anytime! This compact and lightweight notebook with Windows 10 and 128GB emmc storage is well equipped to help you achieve your goals.",
+      "title": "Packard Bell Montenero-C",
+      "description": "The Packard Bell Montenero-C Intel® Celeron® Laptop is always within reach, get it done anywhere, anytime! This compact and lightweight notebook with Windows 10 and 128GB emmc storage is well equipped to help you achieve your goals.",
       "category": "laptops",
       "price": 399.99,
       "discountPercentage": 17.41,
@@ -1367,7 +1367,7 @@
     },
     {
       "id": 142,
-      "title": "Dell Inspiron 3520 Intel® Core™ i7 1255U",
+      "title": "Dell Inspiron 3520 Intel® Core™ i7",
       "description": "Experience responsive yet quiet performance, featuring 12th generation Intel Core processors combined with PCIe SSD options. Optional NVIDIA discrete graphics are available. Benefit from roomy keycaps and a spacious touchpad that makes it easier to navigate your content and ComfortView software, which is a TUV Rheinland certified solution, reduces harmful blue light emissions to keep your eyes comfortable over extended viewing times. Also, sleek three-side narrow borders encase an optional FHD display.",
       "category": "laptops",
       "price": 749.99,
@@ -1429,7 +1429,7 @@
     },
     {
       "id": 143,
-      "title": "ASUS Vivobook S14 Flip AMD® Ryzen™ 7 7730U",
+      "title": "ASUS Vivobook S14 Flip AMD® Ryzen™ 7",
       "description": "Get ready for great adventures with Vivobook S 14 Flip OLED, the super-versatile convertible with a 360° hinge that gives you the freedom to work or play, your way. Enjoy the smooth performance of the AMD Ryzen™ 7 5800H processor and fast SSD storage, also give your eyes a treat with its amazing 2.8K OLED NanoEdge touchscreen. It's the perfect choice for smashing those daily tasks or chilling out in style, and with plenty of ports including a convenient USB 3.2 Gen 2 Type-C® port, it's easy to connect to anything, anywhere. With a choice of on-trend Quiet Blue or Cool Silver finishes, make Vivobook S 14 Flip OLED part of your world today!",
       "category": "laptops",
       "price": 679.99,
@@ -1551,7 +1551,7 @@
     },
     {
       "id": 145,
-      "title": "MacBook Pro (16-inch, 2.3GHz Intel i9, 2019)",
+      "title": "MacBook Pro (16-inch, 2019)",
       "description": "Expand your view of everything on MacBook Pro thanks to a larger 16-inch Retina display with sharper pixel resolution and support for millions of colours. Harness the power of 6-core processors and AMD Radeon Pro 5500M with 4GB of GDDR6 memory, together with an optimized thermal architecture for groundbreaking performance. Featuring up to 16GB of 2666MHz memory and up to 1TB of storage. Touch ID and the Touch Bar. And all-day battery life. Designed for pros who put performance above all else, MacBook Pro gives you the power to accomplish anything, anywhere.",
       "category": "laptops",
       "price": 1049.99,
@@ -1612,7 +1612,7 @@
     },
     {
       "id": 146,
-      "title": "Proline 14 Intel® Celeron® N4020",
+      "title": "Proline 14 Intel® Celeron®",
       "description": "The Proline 14 Celeron N4020 laptop, running on Windows 11 Home, features a 14-inch HD display, 4GB of RAM, and a 128GB SSD for efficient performance. Powered by an Intel Celeron N4020 dual-core processor and Intel® UHD Graphics 600, it ensures smooth computing for everyday tasks. Built-in Wi-Fi 802.11ac and Bluetooth 5.0 provide seamless connectivity, while 1x USB 3.0 and 1x USB 2.0 ports expand peripheral options. The sleek, lightweight design enhances portability. This laptop combines reliable performance, ample storage, and modern features, making it an excellent choice for work, entertainment, and casual gaming needs.",
       "category": "laptops",
       "price": 199.99,
@@ -1674,7 +1674,7 @@
     },
     {
       "id": 147,
-      "title": "MSI Thin 15 Intel® Core™ i7 13620H",
+      "title": "MSI Thin 15 Intel® Core™ i7",
       "description": "The Thin 15 is the perfect companion for your journey! The iconic thin chassis now comes in brand new cosmos grey color and upgraded hardware. Harness the power and experience the gaming world freely, swiftly with Thin 15!",
       "category": "laptops",
       "price": 829.99,
@@ -1736,7 +1736,7 @@
     },
     {
       "id": 149,
-      "title": "Transcend Intel® Core™ Ultra 7 155H",
+      "title": "Transcend Intel® Core™ Ultra 7",
       "description": "The performance of a gaming laptop is matched with an ultra lightweight all-metal chassis, longer battery life, and spectacular 2.8K HDR OLED display. The Transcend 14. Everything you need to play and create anything, anywhere.",
       "category": "laptops",
       "price": 2279.99,
@@ -1799,7 +1799,7 @@
     },
     {
       "id": 150,
-      "title": "Huawei Matebook D16 Intel® Core™ i5 13420H",
+      "title": "Huawei Matebook D16 Intel® Core™ i5",
       "description": "With its retained 16-inch large screen estate, the laptop is now lighter and yet still just as powerful, adding a boost of power to its 13th Gen Intel® Core™ i5 High Performance Processor with the Dual Shark Fin Fan technology and up to 70 Wh of battery life.",
       "category": "laptops",
       "price": 349.99,
@@ -1863,7 +1863,7 @@
     },
     {
       "id": 151,
-      "title": "Samsung 34 Inch Odyssey G55 Gaming Monitor",
+      "title": "Samsung Odyssey G55 Gaming Monitor",
       "description": "Introducing the 34 Inch. Odyssey G55T UWQHD 165Hz Gaming Monitor, a top-tier product from a leading brand in the gaming industry. Designed with the avid gamer in mind, this monitor offers a truly immersive experience with its 1000R curvature, matching the natural contour of the human eye. This feature, combined with the ultra-wide QHD resolution, ensures lifelike detail and unparalleled realism in your gaming sessions. Say goodbye to lag with a blistering 165Hz refresh rate, providing you with smooth and responsive gameplay. Whether you're conquering new worlds or engaging in fast-paced battles, the Odyssey G55T enhances your performance and gaming enjoyment.",
       "category": "laptops",
       "price": 359.99,
@@ -1988,7 +1988,7 @@
     },
     {
       "id": 153,
-      "title": "Acer Nitro MG27X5Q 27-inch Gaming Monitor",
+      "title": "Acer Nitro 27-inch Gaming Monitor",
       "description": "Proudly produced in South Africa, the Acer Nitro 27 QHD Gaming monitor is exactly what you need to showcase the power of your device. The IPS display packs a whopping 400nits peak brightness, 1ms Extreme Response time and a 180Hz refresh rate all in a borderless sleek design. In competitive gaming, every frame matters. Introducing Acer's XV271U gaming monitor - the WQHD (2560 x 1440) resolution monitor that can keep up with your game play. This AMD FreeSync Premium monitor takes gameplay to the next level of smooth, the game's frame rate is determined by your graphics card, not the fixed refresh rate of the monitor, giving you a serious competitive edge. Plus, users can enjoy comfortable viewing experience while gaming via flicker-less, low dimming and ComfyView display. The design saves space on your desk and lets you place multiple monitors side by side to build a seamless big-screen display.",
       "category": "laptops",
       "price": 799.99,

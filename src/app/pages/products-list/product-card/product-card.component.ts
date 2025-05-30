@@ -13,7 +13,8 @@ import { CommonModule } from '@angular/common';
   imports: [ CommonModule, NotificationBannerComponent, RouterModule],
   template: `
   <app-notification-banner #banner></app-notification-banner>
-  <div class="product-card bg-white shadow-md rounded-lg p-4 flex flex-col items-center relative">
+  
+  <div class="product-card bg-white shadow-md rounded-lg p-4 flex flex-col items-center relative cursor-pointer" (click)="viewProductDetails($event)">
       <img *ngIf="product?.thumbnail" [src]="product.thumbnail" alt="{{ product.title }}" class="w-48 h-48 object-cover rounded-md" />
 
       <!-- Wishlist Button -->
@@ -21,7 +22,7 @@ import { CommonModule } from '@angular/common';
               <i [class]="isInWishlist() ? 'bi bi-heart-fill text-red-500' : 'bi bi-heart'"></i>
       </button>
 
-      <h3 class="text-lg font-bold mt-2">{{ product.title }}</h3>
+      <h3 class="text-lg font-bold mt-2" (click)="viewProductDetails($event)">{{ product.title }}</h3>
 
       <!-- Rating -->
       <div class="flex items-center text-yellow-500 mt-1">
@@ -51,6 +52,12 @@ export class ProductCardComponent {
 
 
   constructor(private router: Router, private cartService: CartService, private wishlistService: WishlistService, private checkoutService: CheckoutService) {}
+
+
+  viewProductDetails(event: Event): void {
+    event.stopPropagation();
+    this.router.navigate(['/product', this.product.id]);
+  }
   
   addToCart(): void {
     if (this.cartService.isProductInCart(this.product)) {
