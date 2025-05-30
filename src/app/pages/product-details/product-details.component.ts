@@ -10,7 +10,7 @@ import { CartService } from '../../services/cart.service';
   selector: 'app-product-details',
   imports: [CommonModule],
   template: `
-    <div class="max-w-4xl mx-auto p-6 bg-gray-100 shadow-lg rounded-lg ">
+    <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg ">
   <!-- Image Section -->
   <div class="flex flex-col md:flex-row gap-6">
     <div class="flex flex-col items-center">
@@ -30,19 +30,19 @@ import { CartService } from '../../services/cart.service';
       </div>
 
       <div class="mt-2">
-        <span class="text-gray-500">Category:</span> <span class="font-medium">{{ product.category }}</span>
+        <span class="text-gray-500">Category: </span> <span class="font-medium">{{ product.category }}</span>
       </div>
       <div class="mt-2">
-        <span class="text-gray-500">Discount:</span> <span class="font-medium">{{ product.discountPercentage }}%</span>
+        <span class="text-gray-500">Discount: </span> <span class="font-medium">{{ product.discountPercentage }}%</span>
       </div>
       <div class="mt-2">
-        <span class="text-gray-500">Rated:</span> <span class="font-medium">{{ product.rating }} Stars</span>
+        <span class="text-gray-500">Rated: </span> <span class="font-medium">{{ product.rating }} Stars</span>
       </div>
       <div class="mt-2">
-        <span class="text-gray-500">Return Policy:</span> <span class="font-medium">{{ product.returnPolicy }}</span>
+        <span class="text-gray-500">Return Policy: </span> <span class="font-medium">{{ product.returnPolicy }}</span>
       </div>
       <div class="mt-2">
-        <span class="text-gray-500">Warranty:</span> <span class="font-medium">{{ product.warrantyInformation }}</span>
+        <span class="text-gray-500">Warranty: </span> <span class="font-medium">{{ product.warrantyInformation }}</span>
       </div>
 
 
