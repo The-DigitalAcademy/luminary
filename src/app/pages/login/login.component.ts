@@ -7,9 +7,9 @@ import { ButtonComponent } from '../../components/button/button.component';
   standalone: true,
   imports: [ ButtonComponent],
   template: `
-    <div class="bg-slate-50 h-[25rem] w-[20rem] flex flex-col mx-auto mt-[12rem] rounded-lg shadow-md">
+    <div class="bg-slate-50 h-[25rem] w-[25rem] flex flex-col mx-auto mt-[12rem] rounded-lg shadow-md">
 
-      <app-button label="X" class="justify-self-end text-lg font-bold text-center ml-68 mt-[1rem] "  (onClick)="closeLogin()" />
+      <app-button label="X" class="justify-self-end text-lg font-bold text-center ml-84 mt-[1rem] "  (onClick)="closeLogin()" />
       <div class="flex flex-col items-center">
          <h1 class="text-2xl font-bold text-center text-slate-800 mb-8">
           Login
@@ -22,8 +22,8 @@ import { ButtonComponent } from '../../components/button/button.component';
          <br>
          <p>Don't have an account? <a href="/register" class="text-slate-500 hover:underline">Register</a></p>
 
-      </div>   
-   
+      </div>
+
     </div>
 
   `,
