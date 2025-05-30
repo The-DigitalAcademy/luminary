@@ -39,6 +39,7 @@ import { User } from './user';
 })
 export class RegisterComponent {
   router = inject(Router);
+  userService = inject(UserService);
 
   user: User = {
     firstName: '',
@@ -50,6 +51,24 @@ export class RegisterComponent {
   confirmPassword = '';
 
   onSubmit() {
+    if(!this.user.name || !this.user.surname || !this.user.email || !this.user.password || !this.confirmPassword){
+      alert('Please fill all the fields');
+    }else if(this.user.password !== this.confirmPassword){
+      alert('Passwords do not match');
+    }else if(this.user.password.length < 6){
+      alert('Password must be at least 6 characters long');
+    }else{
+      this.userService.register(this.user).subscribe(user => {
+        if(user){
+          alert('User registered successfully');
+          this.router.navigate(['/login']);
+          this.user.name = '';
+          this.user.surname = '';
+          this.user.email = '';
+          this.user.password = '';
+        }
+      });
+    }
     console.log(this.user);
   }
   closeRegister(){
