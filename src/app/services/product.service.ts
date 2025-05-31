@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Product } from '../models/product.model';
@@ -11,7 +11,17 @@ export class ProductService {
 
   constructor(private http: HttpClient) {}
 
+  products = signal<any[]>([]);
+
   getProducts(): Observable<Product[]> {
     return this.http.get<Product[]>(this.dataUrl);
+  }
+
+  setProducts(products: any[]) {
+    this.products.set(products);
+  }
+
+  searchByTitle(title: string){
+    return this.http.get(`${this.dataUrl}?title=${title}`);
   }
 }
