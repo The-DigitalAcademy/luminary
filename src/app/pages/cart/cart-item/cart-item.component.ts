@@ -5,7 +5,6 @@ import { CartService } from '../../../services/cart.service';
 
 @Component({
   selector: 'app-cart-item',
-  standalone: true,
   imports: [ButtonComponent],
   template: `
     <div class="bg-white shadow-md border rounded-xl p-6 flex gap-4 items-center">
