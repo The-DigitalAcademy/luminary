@@ -76,6 +76,8 @@ export class LoginComponent {
             alert(
               'Your email or password is incorrect or you have not registered'
             );
+            this.currentUser.email = '';
+            this.currentUser.password = '';
           }
         }
       },

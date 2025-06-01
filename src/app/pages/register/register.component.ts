@@ -54,14 +54,6 @@ export class RegisterComponent {
   onSubmit() {
     if(!this.user.firstName || !this.user.lastName || !this.user.email || !this.user.password || !this.confirmPassword){
       alert('Please fill all the fields');
-    }else if(this.userService.checkEmail(this.user.email)){
-      alert('User email already exists');
-          this.user.firstName = '';
-          this.user.lastName = '';
-          this.user.username = '';
-          this.user.email = '';
-          this.user.password = '';
-          this.confirmPassword = '';
     }else if(this.user.password !== this.confirmPassword){
       alert('Passwords do not match');
     }else if(this.user.password.length < 6){

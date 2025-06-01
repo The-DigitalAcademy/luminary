@@ -21,7 +21,8 @@ export class ProductService {
     this.products.set(products);
   }
 
-  searchByTitle(title: string): Observable<Product[]> {
-    return this.http.get<Product[]>(`${this.dataUrl}?title=${title}`);
+  searchByTitle(searchTeam: string): Observable<Product[]> {
+    const title = searchTeam.trim();
+    return this.http.get<any[]>(`${this.dataUrl}?title=${title}`);
   }
 }

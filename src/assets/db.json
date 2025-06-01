@@ -2112,11 +2112,12 @@
   ],
   "users": [
     {
-      "id": 1,
-      "firstName": "Thulani",
+      "id": "bff2",
+      "firstName": "Teboho",
       "lastName": "Nyombolo",
-      "username": "thulaninyombolo@gmail.com",
-      "password": "12345678"
+      "username": "Tebza",
+      "email": "tebohonyombolo@hotmail.com",
+      "password": "1234qwer"
     }
   ]
 }
