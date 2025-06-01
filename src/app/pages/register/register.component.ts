@@ -13,7 +13,7 @@ import { UserService } from '../../services/user.service';
   template: `
     <div class="bg-slate-50 h-[36rem] w-[25rem] flex flex-col mx-auto mt-[12rem] rounded-lg shadow-md">
 
-      <app-button label="X" class="justify-self-end text-lg font-bold text-center ml-84 mt-[1rem] "  (onClick)="closeRegister()" />
+      <app-button label="X" class="justify-self-end text-lg font-bold text-center ml-84 mt-[1rem] "  (click)="closeRegister()" />
       <div class="flex flex-col items-center">
          <h1 class="text-2xl font-bold text-center text-slate-800 mb-8">
           Register

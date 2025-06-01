@@ -46,19 +46,19 @@ import { NgIf } from '@angular/common';
             <app-button
            class="  text-center  my-1 mx-1 rounded-lg"
             label="Logout"
-            (onClick)="navigateToHome()"
+            (click)="navigateToHome()"
           />
           <span class="self-center">Welcome, {{this.userService.currentUser()?.firstName}}</span>
           }@else {
           <app-button
           class="  text-center  my-1 mx-1 rounded-lg"
             label="Login"
-            (onClick)="navigateToLogin()"
+            (click)="navigateToLogin()"
           />
           <app-button
             class="  text-center my-1 mx-1 rounded-lg"
             label="Register"
-            (onClick)="navigateToRegister()"
+            (click)="navigateToRegister()"
           />
           }
       </div>
@@ -75,9 +75,11 @@ export class HeaderComponent {
   cartLabel = computed(() => `${this.cartService.cart().length}`);
 
    navigateToLogin() {
+    console.log('navigateToLogin');
     this.router.navigate(['/login']);
   }
     navigateToRegister() {
+      console.log('navigateToRegister');
     this.router.navigate(['/register']);
   }
 
