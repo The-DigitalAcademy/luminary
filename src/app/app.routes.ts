@@ -17,6 +17,7 @@ export const routes: Routes = [
   { path: 'wishlist', component: WishlistComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'product/:id', component: ProductDetailsComponent },
+  { path: 'cartcheckout', component: CartCheckoutComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
