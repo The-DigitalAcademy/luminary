@@ -6,7 +6,7 @@ import { Component, input, output } from '@angular/core';
   template: `
     <button
       class=" bg-gray-500 text-white px-2 py-1 rounded-lg hover:bg-gray-200 hover:text-gray-600 transition-all"
-      (click)="onClick.emit($event)"
+      (click)="btnClicked.emit()"
 
     >
       <span class="text-md">{{ label() }}</span>

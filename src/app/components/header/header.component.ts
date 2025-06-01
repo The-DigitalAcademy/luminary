@@ -50,18 +50,17 @@ import { NgIf } from '@angular/common';
           />
           <span class="self-center">Welcome, {{this.userService.currentUser()?.firstName}}</span>
           }@else {
-                <app-button
+          <app-button
           class="  text-center  my-1 mx-1 rounded-lg"
             label="Login"
             (onClick)="navigateToLogin()"
           />
           <app-button
             class="  text-center my-1 mx-1 rounded-lg"
-            class="bg-transparent text-gray-700 font-bold px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200 ease-in-out cursor-pointer"
             label="Register"
             (onClick)="navigateToRegister()"
           />
-        </ng-template>
+          }
       </div>
     </div>
   `,
