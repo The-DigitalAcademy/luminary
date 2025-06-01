@@ -5,14 +5,17 @@ import { PrimaryButtonComponent } from '../primary-button/primary-button.compone
 import { ButtonComponent } from '../button/button.component';
 import { UserService } from '../../services/user.service';
 import { SearchComponent } from '../search/search.component';
+import { NgIf } from '@angular/common';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
   imports: [ PrimaryButtonComponent,  RouterLink, ButtonComponent, SearchComponent ],
+
   template: `
-    <div
-      class="bg-slate-50 w-full shadow-lg border-b border-gray-200 flex justify-between sticky top-0 z-50 px-[6rem] py-[.5rem] rounded-b-md"
+    <div 
+      class="fixed top-0 left-0 w-full h-16 bg-white/80 backdrop-blur-md shadow-md border-b border-gray-300 flex justify-evenly items-center px-6 py-4 z-50"
     >
      <div class=" mt-[.5rem] flex justify-center items-center gap-2 mx-[1rem]">
        <img
@@ -48,18 +51,18 @@ import { SearchComponent } from '../search/search.component';
           <span class="self-center">Welcome, {{this.userService.currentUser()?.firstName}}</span>
           }@else {
                 <app-button
-           class="  text-center  my-1 mx-1 rounded-lg"
+          class="  text-center  my-1 mx-1 rounded-lg"
             label="Login"
             (onClick)="navigateToLogin()"
           />
           <app-button
             class="  text-center my-1 mx-1 rounded-lg"
+            class="bg-transparent text-gray-700 font-bold px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200 ease-in-out cursor-pointer"
             label="Register"
             (onClick)="navigateToRegister()"
           />
-          }
-
-        </div>
+        </ng-template>
+      </div>
     </div>
   `,
   styles: `

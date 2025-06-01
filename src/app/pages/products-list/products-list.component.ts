@@ -3,18 +3,20 @@ import { ProductService } from '../../services/product.service';
 import { ProductCardComponent } from './product-card/product-card.component';
 import { Product } from '../../models/product.model';
 import { HeaderComponent } from "../../components/header/header.component";
+import { FooterComponent } from '../../components/footer/footer.component';
 
 @Component({
   selector: 'app-products-list',
-  imports: [ProductCardComponent, HeaderComponent],
+  imports: [ProductCardComponent, HeaderComponent, FooterComponent],
   template: `
   <div>
     <app-header/>
-    <div class="bg-slate-50 p-8 grid grid-cols-3 gap-4">
+    <div class=" mt-16 bg-slate-50 p-8 grid grid-cols-3 gap-4">
       @for (product of products; track product.id) {
       <app-product-card [product]="product" />
       }
     </div>
+    <app-footer/>
   </div>
 
 

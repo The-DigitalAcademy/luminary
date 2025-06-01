@@ -13,16 +13,17 @@ import { CommonModule } from '@angular/common';
   imports: [ CommonModule, NotificationBannerComponent, RouterModule],
   template: `
   <app-notification-banner #banner></app-notification-banner>
-  
-  <div class="product-card bg-white shadow-md rounded-lg p-4 flex flex-col items-center relative cursor-pointer" (click)="viewProductDetails($event)">
-      <img *ngIf="product?.thumbnail" [src]="product.thumbnail" alt="{{ product.title }}" class="w-48 h-48 object-cover rounded-md" />
+
+
+      <div class="product-card bg-white shadow-md rounded-lg p-4 flex flex-col items-center relative " >
+      <img *ngIf="product?.thumbnail" [src]="product.thumbnail" alt="{{ product.title }}" class="w-48 h-48 object-cover rounded-md cursor-pointer"(click)="viewProductDetails($event)"  />
 
       <!-- Wishlist Button -->
-      <button class="absolute top-2 right-2" (click)="toggleWishlist()">
+      <button class="absolute top-2 right-2 cursor-pointer" (click)="toggleWishlist()">
               <i [class]="isInWishlist() ? 'bi bi-heart-fill text-red-500' : 'bi bi-heart'"></i>
       </button>
 
-      <h3 class="text-lg font-bold mt-2" (click)="viewProductDetails($event)">{{ product.title }}</h3>
+      <h3 class="text-lg font-bold mt-2 cursor-pointer" (click)="viewProductDetails($event)">{{ product.title }}</h3>
 
       <!-- Rating -->
       <div class="flex items-center text-yellow-500 mt-1">
@@ -31,12 +32,12 @@ import { CommonModule } from '@angular/common';
       </div>
 
       <p class="text-sm text-gray-600 mt-2">{{ product.brand }}</p>
-      <p class="text-lg font-semibold text-gray-900 mt-2">{{ product.price | currency }}</p>
+      <p class="text-lg font-semibold text-gray-900 mt-2">R{{ product.price}}</p>
       <div class="flex gap-2 mt-4">
-        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all active:scale-90" (click)="addToCart()">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-all active:scale-90 cursor-pointer" (click)="addToCart()">
           <i class="bi bi-bag-fill"></i> Add to Cart
         </button>
-        <button (click)="buyNow()" class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-200 hover:text-gray-600 transition-all">
+        <button (click)="buyNow()" class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-200 hover:text-gray-600 transition-all cursor-pointer">
         <i class="bi bi-cart2"></i> Buy Now
         </button>
       </div>
@@ -65,9 +66,7 @@ export class ProductCardComponent {
       this.banner.showBanner('Item already in cart!', true);
       return;
     } 
-      
     this.banner.showBanner(`You added ${this.product.title} added to your shopping cart!`, false);
-
     setTimeout(() => this.cartService.addProduct(this.product), 0);
     
   }
