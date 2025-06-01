@@ -2,6 +2,7 @@ import { Component, computed, inject } from '@angular/core';
 import { CartService } from '../../../services/cart.service';
 import { ButtonComponent } from '../../../components/button/button.component';
 import { PrimaryButtonComponent } from '../../../components/primary-button/primary-button.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-order-summary',
@@ -26,7 +27,8 @@ import { PrimaryButtonComponent } from '../../../components/primary-button/prima
     </div>
   </div>
 
-  <button class="bg-green-600 text-white px-6 py-3 rounded-lg mt-6 hover:bg-green-700 transition-all">
+  <button class="bg-green-600 text-white px-6 py-3 rounded-lg mt-6 hover:bg-green-700 transition-all"
+  (click)="proceedToCheckout()">
     Proceed to Checkout
   </button>
 </div>
@@ -36,7 +38,7 @@ import { PrimaryButtonComponent } from '../../../components/primary-button/prima
 })
 export class OrderSummaryComponent {
   cartService = inject(CartService);
-
+  router = inject(Router);
   readonly DELIVERY_HANDLING_FEE = 25;
 
   subtotal = computed(() => {
@@ -49,7 +51,8 @@ export class OrderSummaryComponent {
   });
 
   proceedToCheckout(): void {
-    console.log('Proceed to checkout button clicked'); // Debugging
+    console.log('Proceed to checkout button clicked'); 
+    this.router.navigate(['/cartcheckout']);
     
   }
 }
