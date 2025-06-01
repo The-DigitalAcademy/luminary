@@ -17,11 +17,11 @@ export class ProductService {
     return this.http.get<Product[]>(this.dataUrl);
   }
 
-  setProducts(products: any[]) {
+  setProduct(products: any[]) {
     this.products.set(products);
   }
 
-  searchByTitle(title: string){
-    return this.http.get(`${this.dataUrl}?title=${title}`);
+  searchByTitle(title: string): Observable<Product[]> {
+    return this.http.get<Product[]>(`${this.dataUrl}?title=${title}`);
   }
 }
