@@ -1,15 +1,19 @@
-import { Component, OnInit, } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule, Router} from '@angular/router';
 import { ProductService } from '../../services/product.service';
 import { Product } from '../../models/product.model';
 import { WishlistService } from '../../services/wishlist.service';
+import { CheckoutService } from '../../services/checkout.service';
 import { CartService } from '../../services/cart.service';
+import { NotificationBannerComponent } from '../../components/notification/notification-banner.component';
 
 @Component({
   selector: 'app-product-details',
-  imports: [CommonModule],
+  imports: [CommonModule, NotificationBannerComponent, RouterModule],
   template: `
+   <app-notification-banner #banner></app-notification-banner>
+
     <div class="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-lg ">
   <!-- Image Section -->
   <div class="flex flex-col md:flex-row gap-6">
@@ -52,6 +56,9 @@ import { CartService } from '../../services/cart.service';
                 (click)="addToCart()">
           <i class="bi bi-bag-fill"></i> Add to Cart
         </button>
+        <button (click)="buyNow()" class="bg-gray-500 text-white px-4 py-2 rounded-lg hover:bg-gray-200 hover:text-gray-600 transition-all cursor-pointer">
+        <i class="bi bi-cart2"></i> Buy Now
+        </button>
         <button class="bg-red-500 text-white px-6 py-2 rounded-lg hover:bg-red-200 hover:text-red-500 transition-all cursor-pointer"
                 (click)="toggleWishlist()">
           <i [class]="isInWishlist() ? 'bi bi-heart-fill' : 'bi bi-heart'"></i>
@@ -75,7 +82,11 @@ import { CartService } from '../../services/cart.service';
 export class ProductDetailsComponent implements OnInit {
   product!: Product;
 
-  constructor(private route: ActivatedRoute, private productService: ProductService, private wishlistService: WishlistService, private cartService: CartService) {}
+   @ViewChild(NotificationBannerComponent) banner!: NotificationBannerComponent;
+
+
+
+  constructor(private route: ActivatedRoute, private router: Router, private productService: ProductService, private wishlistService: WishlistService, private cartService: CartService,  private checkoutService: CheckoutService) {}
 
   ngOnInit(): void {
     const productId = Number(this.route.snapshot.paramMap.get('id'));
@@ -84,7 +95,13 @@ export class ProductDetailsComponent implements OnInit {
     });
   }
   addToCart(): void {
-    this.cartService.addProduct(this.product);
+    if (this.cartService.isProductInCart(this.product)){
+    this.banner?.showBanner('Item already in cart!', true);
+    return;
+    }
+    this.banner?.showBanner(`You added ${this.product.title} added to your shopping cart!`, false);
+    setTimeout(() => this.cartService.addProduct(this.product), 0);
+
   }
 
   toggleWishlist(): void {
@@ -93,5 +110,9 @@ export class ProductDetailsComponent implements OnInit {
 
   isInWishlist(): boolean {
     return this.wishlistService.isInWishlist(this.product);
+  }
+  buyNow(): void {
+  this.checkoutService.setProduct(this.product); 
+  this.router.navigate(['/checkout']);
   }
 }
