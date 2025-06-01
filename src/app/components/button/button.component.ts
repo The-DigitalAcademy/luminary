@@ -1,20 +1,21 @@
-import { Component, input, output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-button',
   imports: [],
   template: `
     <button
-      class=" text-black w-full px-5 py-2 rounded-xl shadow-md hover:hover:bg-red-500 hover:text-white transition-all"
-      (click)="btnClicked.emit()"
+      class=" text-slate-800 px-2 py-1.5 rounded-lg transition-all"
+      (click)="onClick.emit($event)"
     >
-      <span class="text-md">{{ label() }}</span>
+      <span class="text-md">{{label}}</span>
     </button>
   `,
   styles: ``,
 })
 export class ButtonComponent {
-  label = input<string>();
+  @Input() label = '';
+  @Input() type: 'button' | 'submit' | 'reset' = 'button';
+  @Output() onClick = new EventEmitter<Event>();
 
-  btnClicked = output();
 }
