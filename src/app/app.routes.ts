@@ -7,6 +7,7 @@ import { WishlistComponent } from './pages/wishlist/wishlist.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { CartCheckoutComponent } from './pages/cart-checkout/cart-checkout.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -17,6 +18,7 @@ export const routes: Routes = [
   { path: 'wishlist', component: WishlistComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'product/:id', component: ProductDetailsComponent },
+  { path: 'cartcheckout', component: CartCheckoutComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
