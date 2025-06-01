@@ -11,7 +11,7 @@ import { CartService } from '../../../services/cart.service';
       <img [src]="item().thumbnail" class="w-[50px] h-[50px] object-contain" />
       <div class="flex flex-col">
         <span class="text-md font-bold">{{ item().title }}</span>
-        <span class="text-sm"> {{ '$' + item().price }}</span>
+        <span class="text-sm"> {{ 'R' + item().price }}</span>
       </div>
       <div class="flex items-center gap-2">
         <app-button label="-" (btnClicked)="cartService.decrementQuantity(item())"></app-button>
@@ -19,7 +19,10 @@ import { CartService } from '../../../services/cart.service';
         <app-button label="+" (btnClicked)="cartService.incrementQuantity(item())"></app-button>
       </div>
       <div class="flex-1"></div>
-      <app-button label="Remove" (btnClicked)="cartService.removeFromCart(item())"/>
+      <button (click)="cartService.removeFromCart(item())" class="text-red-200 text-xl hover:text-red-500 transition-all cursor-pointer">
+        <i class="bi bi-x-circle"></i>
+      </button>
+
     </div>
   `,
   styles: ``,
