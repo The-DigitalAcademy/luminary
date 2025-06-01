@@ -4,64 +4,74 @@ import { Router, RouterLink } from '@angular/router';
 import { PrimaryButtonComponent } from '../primary-button/primary-button.component';
 import { ButtonComponent } from '../button/button.component';
 import { UserService } from '../../services/user.service';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [ PrimaryButtonComponent,  RouterLink, ButtonComponent ],
+  imports: [ PrimaryButtonComponent,  RouterLink, ButtonComponent, NgIf ],
   template: `
-    <div
-      class="bg-slate-50 w-full shadow-lg border-b border-gray-200 flex justify-between sticky top-0 z-50 px-[6rem] py-[.5rem] rounded-b-md"
+    <div 
+      class="fixed top-0 left-0 w-full h-16 bg-white/80 backdrop-blur-md shadow-md border-b border-gray-300 flex justify-evenly items-center px-6 py-4 z-50"
     >
-     <div class=" mt-[.5rem] justify-center items-center mx-[1rem]">
-         <button
-        class=" text-2xl justify-center self-center italic font-bold tracking-wide text-gray-800 hover:text-slate-300"
-        routerLink="/"
-      >
-        Luminary
-      </button>
-     </div>
-      <div class="flex justify-center items-center mx-[20rem]">
+      <div class="flex items-center">
+        <button
+          routerLink="/"
+          class="text-2xl italic font-bold tracking-wide text-gray-800 hover:text-gray-500 transition-colors duration-200 ease-in-out"
+        >
+          Luminary
+        </button>
+      </div>
+
+      <div class="flex items-center gap-2 flex-grow justify-center">
         <input
           type="text"
           placeholder="Search products..."
-          class="w-1/1 px-2 py-.5 border border-gray-300 rounded-md focus:outline-none mx-[.5rem]"
+          class="w-full max-w-md px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-500 outline-none"
         />
         <button
-          class="bg-slate-100 text-black px-2 py-.5 rounded-md hover:bg-slate-300 transition-all flex items-center gap-2"
+          class="bg-transparent text-gray-700 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200 ease-in-out flex items-center gap-2 cursor-pointer"
         >
           <i class="bi bi-search"></i>
         </button>
       </div>
-       <div class="flex items-center gap-4 mx-[1rem]">
-          <button
-            routerLink="/wishlist"
-            class="bg-transparent text-gray-700 mx-2 my-2 rounded-md hover:bg-gray-100 transition-all flex items-center gap-2"
-          >
-            <i class="bi bi-heart"></i>
-          </button>
-          <app-primary-button label="{{ cartLabel() }}" routerLink="/cart" />
-          @if(userService.currentUser()) {
-            <app-button
-           class=" bg-slate-300 text-center font-bold my-1 mx-1 rounded-lg"
+
+      <div class="flex items-center gap-4">
+        <button
+          routerLink="/wishlist"
+          class="text-gray-700 hover:bg-gray-100 px-3 py-2 rounded-md transition-colors duration-200 ease-in-out flex items-center gap-2 cursor-pointer">
+          <i class="bi bi-heart"></i>
+        </button>
+        
+        <app-primary-button
+  class="bg-transparent text-gray-700 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200 ease-in-out flex items-center gap-2"
+  label="{{ cartLabel() }}"
+  routerLink="/cart"
+/>
+
+
+        <ng-container *ngIf="userService.currentUser(); else guestOptions">
+          <app-button
+            class="bg-gray-300 font-bold px-3 py-2 rounded-lg"
             label="Logout"
             (onClick)="navigateToHome()"
           />
-          <span class="self-center">Welcome, {{this.userService.currentUser()?.firstName}}</span>
-          }@else {
-                <app-button
-           class=" bg-slate-300 text-center font-bold my-1 mx-1 rounded-lg"
+          <span class="self-center">Welcome, {{ userService.currentUser()?.firstName }}</span>
+        </ng-container>
+
+        <ng-template #guestOptions>
+          <app-button
+            class="bg-transparent text-gray-700 font-bold px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200 ease-in-out cursor-pointer"
             label="Login"
             (onClick)="navigateToLogin()"
           />
           <app-button
-            class=" bg-slate-300 text-center font-bold my-1 mx-1 rounded-lg"
+            class="bg-transparent text-gray-700 font-bold px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200 ease-in-out cursor-pointer"
             label="Register"
             (onClick)="navigateToRegister()"
           />
-          }
-
-        </div>
+        </ng-template>
+      </div>
     </div>
   `,
   styles: `
