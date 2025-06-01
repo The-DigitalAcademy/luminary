@@ -5,26 +5,32 @@ import { PrimaryButtonComponent } from '../../../components/primary-button/prima
 
 @Component({
   selector: 'app-order-summary',
-  imports: [PrimaryButtonComponent],
   template: `
-    <div class="bg-slate-100 p-6 rounded-xl shadow-xl border">
-      <h2 class="text-2xl">Order Summary</h2>
-      <div class="flex flex-col gap-4">
-        <div class="flex gap-4">
-          <span class="text-lg">Subtotal</span>
-          <span class="text-lg font-bold">{{ '$ ' + subtotal() }}</span>
-        </div>
-        <div class="flex gap-4">
-          <span class="text-lg">Estimated Delivery & Handling</span>
-          <span class="text-lg font-bold">{{ '$ ' + DELIVERY_HANDLING_FEE }}</span>
-        </div>
-        <div class="flex gap-4">
-          <span class="text-lg">Total</span>
-          <span class="text-lg font-bold">{{ '$ ' + total() }}</span>
-        </div>
-        <app-primary-button label="Proceed to checkout" />
-      </div>
+    <div class="bg-slate-100 p-6 rounded-xl shadow-xl border flex flex-col items-center text-center">
+  <h2 class="text-2xl font-bold">Order Summary</h2>
+
+  <div class="flex flex-col gap-4 mt-4">
+    <div class="flex flex-col items-center">
+      <span class="text-lg">Subtotal</span>
+      <span class="text-lg font-bold">R{{ subtotal() }}</span>
     </div>
+
+    <div class="flex flex-col items-center">
+      <span class="text-lg">Estimated Delivery & Handling</span>
+      <span class="text-lg font-bold">R{{ DELIVERY_HANDLING_FEE }}</span>
+    </div>
+
+    <div class="flex flex-col items-center">
+      <span class="text-lg">Total</span>
+      <span class="text-lg font-bold">R{{ total() }}</span>
+    </div>
+  </div>
+
+  <button class="bg-green-600 text-white px-6 py-3 rounded-lg mt-6 hover:bg-green-700 transition-all">
+    Proceed to Checkout
+  </button>
+</div>
+
   `,
   styles: ``,
 })
@@ -41,4 +47,9 @@ export class OrderSummaryComponent {
     const subtotalValue = parseFloat(this.subtotal());
     return subtotalValue > 0 ? (subtotalValue + this.DELIVERY_HANDLING_FEE).toFixed(2) : '0.00';
   });
+
+  proceedToCheckout(): void {
+    console.log('Proceed to checkout button clicked'); // Debugging
+    
+  }
 }
