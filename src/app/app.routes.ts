@@ -8,6 +8,7 @@ import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
 import { CartCheckoutComponent } from './pages/cart-checkout/cart-checkout.component';
+import { OrdersComponent } from './pages/orders/orders.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -19,6 +20,8 @@ export const routes: Routes = [
   { path: 'checkout', component: CheckoutComponent },
   { path: 'product/:id', component: ProductDetailsComponent },
   { path: 'cartcheckout', component: CartCheckoutComponent },
+  { path: 'orders', component: OrdersComponent },
+  { path: '', redirectTo: '/cartcheckout', pathMatch: 'full' },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
