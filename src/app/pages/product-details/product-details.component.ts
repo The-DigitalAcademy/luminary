@@ -96,6 +96,7 @@ export class ProductDetailsComponent implements OnInit {
     this.productService.getProducts().subscribe(products => {
       this.product = products.find(p => Number(p.id) === productId) || {} as Product;
       console.log('Matched Product:', this.product);
+
     });
   }
   addToCart(): void {
