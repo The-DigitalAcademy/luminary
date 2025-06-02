@@ -19,6 +19,7 @@ import { NotificationBannerComponent } from '../../components/notification/notif
   <div class="flex flex-col md:flex-row gap-6">
     <div class="flex flex-col items-center">
       <img [src]="product.thumbnail" [alt]="product.title" class="w-64 h-auto bg-white rounded-lg shadow-md" />
+    
       <div class="flex gap-2 mt-2">
         <img *ngFor="let img of product.images" [src]="img" class="w-16 h-16 bg-white rounded-lg shadow-md cursor-pointer hover:opacity-80"/>
       </div>
@@ -48,7 +49,7 @@ import { NotificationBannerComponent } from '../../components/notification/notif
       <div class="mt-2">
         <span class="text-gray-500">Warranty: </span> <span class="font-medium">{{ product.warrantyInformation }}</span>
       </div>
-
+  
 
       <!-- Buttons -->
       <div class="flex gap-4 mt-6">
@@ -89,9 +90,12 @@ export class ProductDetailsComponent implements OnInit {
   constructor(private route: ActivatedRoute, private router: Router, private productService: ProductService, private wishlistService: WishlistService, private cartService: CartService,  private checkoutService: CheckoutService) {}
 
   ngOnInit(): void {
+
     const productId = Number(this.route.snapshot.paramMap.get('id'));
+    
     this.productService.getProducts().subscribe(products => {
-      this.product = products.find(p => p.id === productId)!;
+      this.product = products.find(p => Number(p.id) === productId) || {} as Product;
+      console.log('Matched Product:', this.product);
     });
   }
   addToCart(): void {
