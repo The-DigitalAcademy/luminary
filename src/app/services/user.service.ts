@@ -16,7 +16,7 @@ export class UserService {
   private http = inject(HttpClient);
   private apiURL = 'http://localhost:3000/users';
 
-
+  users = signal<User[]>([]);
   currentUser = signal<User | null>(null);
 
   constructor(private router: Router) {

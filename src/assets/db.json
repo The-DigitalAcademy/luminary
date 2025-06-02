@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 121,
+      "id": "121",
       "title": "iPhone 5s",
       "description": "The iPhone 5s is a classic smartphone known for its compact design and advanced features during its release. While it's an older model, it still provides a reliable user experience.",
       "category": "smartphones",
@@ -63,7 +63,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/iphone-5s/thumbnail.webp"
     },
     {
-      "id": 122,
+      "id": "122",
       "title": "iPhone 6",
       "description": "The iPhone 6 is a stylish and capable smartphone with a larger display and improved performance. It introduced new features and design elements, making it a popular choice in its time.",
       "category": "smartphones",
@@ -125,7 +125,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/iphone-6/thumbnail.webp"
     },
     {
-      "id": 123,
+      "id": "123",
       "title": "iPhone 13 Pro",
       "description": "The iPhone 13 Pro is a cutting-edge smartphone with a powerful camera system, high-performance chip, and stunning display. It offers advanced features for users who demand top-notch technology.",
       "category": "smartphones",
@@ -187,7 +187,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/iphone-13-pro/thumbnail.webp"
     },
     {
-      "id": 124,
+      "id": "124",
       "title": "iPhone X",
       "description": "The iPhone X is a flagship smartphone featuring a bezel-less OLED display, facial recognition technology (Face ID), and impressive performance. It represents a milestone in iPhone design and innovation.",
       "category": "smartphones",
@@ -249,7 +249,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/iphone-x/thumbnail.webp"
     },
     {
-      "id": 125,
+      "id": "125",
       "title": "Oppo A57",
       "description": "The Oppo A57 is a mid-range smartphone known for its sleek design and capable features. It offers a balance of performance and affordability, making it a popular choice.",
       "category": "smartphones",
@@ -311,7 +311,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/oppo-a57/thumbnail.webp"
     },
     {
-      "id": 126,
+      "id": "126",
       "title": "Oppo F19 Pro Plus",
       "description": "The Oppo F19 Pro Plus is a feature-rich smartphone with a focus on camera capabilities. It boasts advanced photography features and a powerful performance for a premium user experience.",
       "category": "smartphones",
@@ -373,7 +373,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/oppo-f19-pro-plus/thumbnail.webp"
     },
     {
-      "id": 127,
+      "id": "127",
       "title": "Oppo K1",
       "description": "The Oppo K1 series offers a range of smartphones with various features and specifications. Known for their stylish design and reliable performance, the Oppo K1 series caters to diverse user preferences.",
       "category": "smartphones",
@@ -436,7 +436,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/oppo-k1/thumbnail.webp"
     },
     {
-      "id": 128,
+      "id": "128",
       "title": "Realme C35",
       "description": "The Realme C35 is a budget-friendly smartphone with a focus on providing essential features for everyday use. It offers a reliable performance and user-friendly experience.",
       "category": "smartphones",
@@ -498,7 +498,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/realme-c35/thumbnail.webp"
     },
     {
-      "id": 129,
+      "id": "129",
       "title": "Realme X",
       "description": "The Realme X is a mid-range smartphone known for its sleek design and impressive display. It offers a good balance of performance and camera capabilities for users seeking a quality device.",
       "category": "smartphones",
@@ -560,7 +560,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/realme-x/thumbnail.webp"
     },
     {
-      "id": 130,
+      "id": "130",
       "title": "Realme XT",
       "description": "The Realme XT is a feature-rich smartphone with a focus on camera technology. It comes equipped with advanced camera sensors, delivering high-quality photos and videos for photography enthusiasts.",
       "category": "smartphones",
@@ -622,7 +622,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/realme-xt/thumbnail.webp"
     },
     {
-      "id": 131,
+      "id": "131",
       "title": "Samsung Galaxy S7",
       "description": "The Samsung Galaxy S7 is a flagship smartphone known for its sleek design and advanced features. It features a high-resolution display, powerful camera, and robust performance.",
       "category": "smartphones",
@@ -684,7 +684,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s7/thumbnail.webp"
     },
     {
-      "id": 132,
+      "id": "132",
       "title": "Samsung Galaxy S8",
       "description": "The Samsung Galaxy S8 is a premium smartphone with an Infinity Display, offering a stunning visual experience. It boasts advanced camera capabilities and cutting-edge technology.",
       "category": "smartphones",
@@ -746,7 +746,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s8/thumbnail.webp"
     },
     {
-      "id": 133,
+      "id": "133",
       "title": "Samsung Galaxy S10",
       "description": "The Samsung Galaxy S10 is a flagship device featuring a dynamic AMOLED display, versatile camera system, and powerful performance. It represents innovation and excellence in smartphone technology.",
       "category": "smartphones",
@@ -808,7 +808,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/samsung-galaxy-s10/thumbnail.webp"
     },
     {
-      "id": 134,
+      "id": "134",
       "title": "Vivo S1",
       "description": "The Vivo S1 is a stylish and mid-range smartphone offering a blend of design and performance. It features a vibrant display, capable camera system, and reliable functionality.",
       "category": "smartphones",
@@ -870,7 +870,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/vivo-s1/thumbnail.webp"
     },
     {
-      "id": 135,
+      "id": "135",
       "title": "Vivo V9",
       "description": "The Vivo V9 is a smartphone known for its sleek design and emphasis on capturing high-quality selfies. It features a notch display, dual-camera setup, and a modern design.",
       "category": "smartphones",
@@ -932,7 +932,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/vivo-v9/thumbnail.webp"
     },
     {
-      "id": 136,
+      "id": "136",
       "title": "Vivo X21",
       "description": "The Vivo X21 is a premium smartphone with a focus on cutting-edge technology. It features an in-display fingerprint sensor, a high-resolution display, and advanced camera capabilities.",
       "category": "smartphones",
@@ -994,7 +994,7 @@
       "thumbnail": "https://cdn.dummyjson.com/product-images/smartphones/vivo-x21/thumbnail.webp"
     },
     {
-      "id": 148,
+      "id": "148",
       "title": "Samsung Galaxy S25 Ultra",
       "description": "Simple. Impactful. Galaxy S25 Ultra's rounded design expresses a unified identity for the Galaxy S series. With its sleek and strong titanium frame and a built-in S Pen, it's an ultra-modern, vision of bold design Looks sleek. Built tough, Ultra-strong titanium: Shielded in a strong titanium frame, your Galaxy S25 Ultra always stays protected. Galaxy's toughest glass ever: Reinforced by our durable Corning® Gorilla® Armor 2 display glass ready to protect your Galaxy. Stay water resistant: With an IP68 rating, water and dust resistance lets you take this Galaxy further than you thought possible. Advanced AI ProVisual Engine. Our next-gen ProVisual Engine is now boosted by our powerful processor—allowing you to capture, view and edit for our best camera and editing experience yet. 12 MP Selfie Camera, 50 MP Ultra Wide,200 MP Wide-angle | 2x Optical Quality Zoom,  50 MP Telephoto | 5x Optical Zoom & 10x Optical Quality Zoom, 10 MP Telephoto | 3x Optical Zoom. The most powerful processor, customized for Galaxy. Introducing our most powerful processor, customized for Galaxy. With improved real-time ray tracing and Vulkan optimization, dive deep into the action with ultra-smooth gameplay thanks to Snapdragon® 8 Elite Mobile Platform for Galaxy.",
       "category": "smartphones",
@@ -1056,7 +1056,7 @@
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/s/m/sm_s938_galaxys25ultra_front_titaniumblack_ecommerce_0de1.png?width=700&height=700&store=incredibleconnection&image-type=image"
     },
     {
-      "id": 155,
+      "id": "155",
       "title": "Google Pixel 9 Pro",
       "description": "Google Pixel 9 Pro: All Pro. Pure Magic. Experience the most powerful Pixel yet, powered by Google Tensor G4 and Gemini AI assistant. From pro-level photos and video to unmatched AI capabilities, the Pixel 9 Pro is designed to elevate your everyday life. With a bright Super Actual display, powerhouse performance, and an all-day battery, the Pixel 9 Pro combines innovation, durability, and style in one stunning device.",
       "category": "smartphones",
@@ -1114,12 +1114,11 @@
         "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/4536824/Screenshot_2025-02-18_115338_BNKCl6ZYE.png",
         "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/4536824/Screenshot_2025-02-18_115236_r1XNXRgEj.png",
         "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/4536824/Screenshot_2025-02-18_115249_tALdam_Ex.png"
-
       ],
       "thumbnail": "https://img.bobshop.co.za/f_auto,q_auto:eco,d_notfound.png/user/4536824/Screenshot_2025-02-18_115338_BNKCl6ZYE.png"
     },
     {
-      "id": 137,
+      "id": "137",
       "title": "HP 15s Intel® Core™ i7",
       "description": "Elevate your productivity and mobility with the HP 15.6 Laptop PC, designed for your convenience. Whether you're on the go or working from your favorite spot, this laptop empowers you to do your thing, all day, and wherever you prefer. No matter your needs, the HP 15.6 Laptop PC is designed to meet them. It's the perfect blend of style, portability, and performance. Elevate your computing experience with a laptop that's ready to keep up with your demands, all day long.",
       "category": "laptops",
@@ -1181,13 +1180,13 @@
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/1/0/10293502___8y7b3ea____front_ecommerce_918e.png?store=incredibleconnection&image-type=image"
     },
     {
-      "id": 138,
+      "id": "138",
       "title": "MacBook Pro 16-inch | Apple M4",
       "description": "The 16-inch MacBook Pro with M4 Pro and M4 Max chips gives you outrageous performance in a powerhouse laptop built for Apple Intelligence.1 With up to 24 hours of battery life2 and a breathtaking Liquid Retina XDR display with up to 1,600 nits peak brightness, it's pro in every way.",
       "category": "laptops",
       "price": 11999.99,
       "discountPercentage": 17.41,
-      "rating": 5.00,
+      "rating": 5,
       "stock": 20,
       "tags": [
         "laptops",
@@ -1243,7 +1242,7 @@
       "thumbnail": "https://www.istore.co.za/media/catalog/product/cache/7cbfd4bf9761b066f119e95af17e67c5/m/a/macbook_pro_16-inch_m4_pro_or_max_chip_space_black_pdp_image_position_1__wwen_1_3.png"
     },
     {
-      "id": 140,
+      "id": "140",
       "title": "Strix G16 Intel® Core™ i9",
       "description": "Power through any game or project with an Intel® Core™ i9 Processor 14900HX, featuring up to a 65W TDP and a hybrid architecture built from the ground up for Windows 11 Pro. With up to 8 Performance-cores and 16 Efficient-cores and Intel's latest Application Optimization technology increasing frames rates to up to 40% in supported titles, AAA gaming is flawless and streaming is effortless.",
       "category": "laptops",
@@ -1305,7 +1304,7 @@
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/1/6/16_gray_4_zone_02_l_ecommerce_b298.png?width=700&height=700&store=incredibleconnection&image-type=image"
     },
     {
-      "id": 141,
+      "id": "141",
       "title": "Packard Bell Montenero-C",
       "description": "The Packard Bell Montenero-C Intel® Celeron® Laptop is always within reach, get it done anywhere, anytime! This compact and lightweight notebook with Windows 10 and 128GB emmc storage is well equipped to help you achieve your goals.",
       "category": "laptops",
@@ -1366,7 +1365,7 @@
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/m/o/montenero_c_unit_pic_02_ecommerce_14ef.png?width=700&height=700&store=incredibleconnection&image-type=image"
     },
     {
-      "id": 142,
+      "id": "142",
       "title": "Dell Inspiron 3520 Intel® Core™ i7",
       "description": "Experience responsive yet quiet performance, featuring 12th generation Intel Core processors combined with PCIe SSD options. Optional NVIDIA discrete graphics are available. Benefit from roomy keycaps and a spacious touchpad that makes it easier to navigate your content and ComfortView software, which is a TUV Rheinland certified solution, reduces harmful blue light emissions to keep your eyes comfortable over extended viewing times. Also, sleek three-side narrow borders encase an optional FHD display.",
       "category": "laptops",
@@ -1428,7 +1427,7 @@
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/i/n/in3520nt_cnb_00000ff090_bk_ecommerce_6cc6.png?width=700&height=700&store=incredibleconnection&image-type=image"
     },
     {
-      "id": 143,
+      "id": "143",
       "title": "ASUS Vivobook S14 Flip AMD® Ryzen™ 7",
       "description": "Get ready for great adventures with Vivobook S 14 Flip OLED, the super-versatile convertible with a 360° hinge that gives you the freedom to work or play, your way. Enjoy the smooth performance of the AMD Ryzen™ 7 5800H processor and fast SSD storage, also give your eyes a treat with its amazing 2.8K OLED NanoEdge touchscreen. It's the perfect choice for smashing those daily tasks or chilling out in style, and with plenty of ports including a convenient USB 3.2 Gen 2 Type-C® port, it's easy to connect to anything, anywhere. With a choice of on-trend Quiet Blue or Cool Silver finishes, make Vivobook S 14 Flip OLED part of your world today!",
       "category": "laptops",
@@ -1490,7 +1489,7 @@
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/v/i/vivobook_s_14_flip_oled_tn3402_product_photo_2b_quiet_blue_22_ecommerce_e800.png?width=700&height=700&store=incredibleconnection&image-type=image"
     },
     {
-      "id": 144,
+      "id": "144",
       "title": "MacBook Air (13-inch, 2017)",
       "description": "Discover efficiency and portability with the MacBook Air. Featuring a stunning 13.3-inch LED-backlit display and a powerful 1.8GHz processor, this laptop is perfect for work or play. With its spacious storage and multitasking capabilities, the MacBook Air delivers performance for your needs.",
       "category": "laptops",
@@ -1550,7 +1549,7 @@
       "thumbnail": "https://istorepreowned.co.za/cdn/shop/products/MacBook_Air_13-inch_2017_Silver.png?v=1710874032&width=1200"
     },
     {
-      "id": 145,
+      "id": "145",
       "title": "MacBook Pro (16-inch, 2019)",
       "description": "Expand your view of everything on MacBook Pro thanks to a larger 16-inch Retina display with sharper pixel resolution and support for millions of colours. Harness the power of 6-core processors and AMD Radeon Pro 5500M with 4GB of GDDR6 memory, together with an optimized thermal architecture for groundbreaking performance. Featuring up to 16GB of 2666MHz memory and up to 1TB of storage. Touch ID and the Touch Bar. And all-day battery life. Designed for pros who put performance above all else, MacBook Pro gives you the power to accomplish anything, anywhere.",
       "category": "laptops",
@@ -1611,7 +1610,7 @@
       "thumbnail": "https://istorepreowned.co.za/cdn/shop/products/MacBook_Pro_16-inch_2019_2.6GHz_Intel_Core_i7_512GB_-_Silver.jpg?v=1710872948&width=1200"
     },
     {
-      "id": 146,
+      "id": "146",
       "title": "Proline 14 Intel® Celeron®",
       "description": "The Proline 14 Celeron N4020 laptop, running on Windows 11 Home, features a 14-inch HD display, 4GB of RAM, and a 128GB SSD for efficient performance. Powered by an Intel Celeron N4020 dual-core processor and Intel® UHD Graphics 600, it ensures smooth computing for everyday tasks. Built-in Wi-Fi 802.11ac and Bluetooth 5.0 provide seamless connectivity, while 1x USB 3.0 and 1x USB 2.0 ports expand peripheral options. The sleek, lightweight design enhances portability. This laptop combines reliable performance, ample storage, and modern features, making it an excellent choice for work, entertainment, and casual gaming needs.",
       "category": "laptops",
@@ -1673,7 +1672,7 @@
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/v/1/v146gnk_xxx_ecommerce_8238.png?width=700&height=700&store=incredibleconnection&image-type=image"
     },
     {
-      "id": 147,
+      "id": "147",
       "title": "MSI Thin 15 Intel® Core™ i7",
       "description": "The Thin 15 is the perfect companion for your journey! The iconic thin chassis now comes in brand new cosmos grey color and upgraded hardware. Harness the power and experience the gaming world freely, swiftly with Thin 15!",
       "category": "laptops",
@@ -1735,7 +1734,7 @@
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/m/s/msi_nb_thin_15_photo_03_ecommerce_4169.png?width=700&height=700&store=incredibleconnection&image-type=image"
     },
     {
-      "id": 149,
+      "id": "149",
       "title": "Transcend Intel® Core™ Ultra 7",
       "description": "The performance of a gaming laptop is matched with an ultra lightweight all-metal chassis, longer battery life, and spectacular 2.8K HDR OLED display. The Transcend 14. Everything you need to play and create anything, anywhere.",
       "category": "laptops",
@@ -1798,7 +1797,7 @@
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/1/0/10298974___a19ldea____omen_transcend_14_front_ecommerce_6b56.png?width=700&height=700&store=incredibleconnection&image-type=image"
     },
     {
-      "id": 150,
+      "id": "150",
       "title": "Huawei Matebook D16 Intel® Core™ i5",
       "description": "With its retained 16-inch large screen estate, the laptop is now lighter and yet still just as powerful, adding a boost of power to its 13th Gen Intel® Core™ i5 High Performance Processor with the Dual Shark Fin Fan technology and up to 70 Wh of battery life.",
       "category": "laptops",
@@ -1859,10 +1858,9 @@
         "https://www.incredible.co.za/api/catalog/product/m/a/matebook_mb_3_ecommerce_7212.png?width=700&height=700&store=incredibleconnection&image-type=image"
       ],
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/h/u/huawei_d16_dmp_fv_ecommerce_2056.png?width=700&height=700&store=incredibleconnection&image-type=image"
-
     },
     {
-      "id": 151,
+      "id": "151",
       "title": "Samsung Odyssey G55 Gaming Monitor",
       "description": "Introducing the 34 Inch. Odyssey G55T UWQHD 165Hz Gaming Monitor, a top-tier product from a leading brand in the gaming industry. Designed with the avid gamer in mind, this monitor offers a truly immersive experience with its 1000R curvature, matching the natural contour of the human eye. This feature, combined with the ultra-wide QHD resolution, ensures lifelike detail and unparalleled realism in your gaming sessions. Say goodbye to lag with a blistering 165Hz refresh rate, providing you with smooth and responsive gameplay. Whether you're conquering new worlds or engaging in fast-paced battles, the Odyssey G55T enhances your performance and gaming enjoyment.",
       "category": "laptops",
@@ -1923,7 +1921,7 @@
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/g/5/g55_ecommerce_43be.png?width=700&height=700&store=incredibleconnection&image-type=image"
     },
     {
-      "id": 152,
+      "id": "152",
       "title": "Dell 34-inch Curved Gaming Monitor",
       "description": "Game in comfort for extended periods thanks to a new slim, tapered stand with easy height, tilt and slant adjustability. The angled base provides sturdy support and a smaller footprint, allowing you to be closer to the action.",
       "category": "laptops",
@@ -1982,12 +1980,11 @@
         "https://www.incredible.co.za/api/catalog/product/s/3/s3422dwg_xfp_02_bk_ecommerce_d8be.png?width=700&height=700&store=incredibleconnection&image-type=image",
         "https://www.incredible.co.za/api/catalog/product/s/3/s3422dwg_xfp_05_bk_ecommerce_12b4.png?width=700&height=700&store=incredibleconnection&image-type=image",
         "https://www.incredible.co.za/api/catalog/product/s/3/s3422dwg_xfp_06_bk_ecommerce_ab78.png?width=700&height=700&store=incredibleconnection&image-type=image"
-
       ],
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/s/3/s3422dwg_xfp_01_bk_ecommerce_4511.png?width=700&height=700&store=incredibleconnection&image-type=image"
     },
     {
-      "id": 153,
+      "id": "153",
       "title": "Acer Nitro 27-inch Gaming Monitor",
       "description": "Proudly produced in South Africa, the Acer Nitro 27 QHD Gaming monitor is exactly what you need to showcase the power of your device. The IPS display packs a whopping 400nits peak brightness, 1ms Extreme Response time and a 180Hz refresh rate all in a borderless sleek design. In competitive gaming, every frame matters. Introducing Acer's XV271U gaming monitor - the WQHD (2560 x 1440) resolution monitor that can keep up with your game play. This AMD FreeSync Premium monitor takes gameplay to the next level of smooth, the game's frame rate is determined by your graphics card, not the fixed refresh rate of the monitor, giving you a serious competitive edge. Plus, users can enjoy comfortable viewing experience while gaming via flicker-less, low dimming and ComfyView display. The design saves space on your desk and lets you place multiple monitors side by side to build a seamless big-screen display.",
       "category": "laptops",
@@ -2046,12 +2043,11 @@
         "https://www.incredible.co.za/api/catalog/product/4/7/4711121821219_2493769_ecommerce_a374.png?width=700&height=700&store=incredibleconnection&image-type=image",
         "https://www.incredible.co.za/api/catalog/product/4/7/4711121821219_2493767_ecommerce_dee2.png?width=700&height=700&store=incredibleconnection&image-type=image",
         "https://www.incredible.co.za/api/catalog/product/4/7/4711121821219_2493770_ecommerce_9a3c.png?width=700&height=700&store=incredibleconnection&image-type=image"
-
       ],
       "thumbnail": "https://www.incredible.co.za/api/catalog/product/n/i/nitro_27__gaming_monitor_01_ecommerce_cf09.png?width=700&height=700&store=incredibleconnection&image-type=image"
     },
     {
-      "id": 154,
+      "id": "154",
       "title": "Xiaomi Curved Gaming Monitor ",
       "description": "The Xiaomi G34WQi 34-inch 1440P UltraWide WQHD VA Curved Gaming Monitor pulls you right into the heart of the action with its 1500R golden curvature, designed to match the natural curve of your eyes. Whether you're locked in an intense firefight, exploring vast open worlds, or binge-watching your favourite series, the deep curve fills your peripheral vision for an ultra-immersive experience that feels larger than life. No distractions - just pure, uninterrupted focus. With its 21:9 ultrawide aspect ratio and 34-inch 3440 x 1440 WQHD resolution, the G34WQi expands your field of view by 30% more than standard 16:9 monitors. Spot enemies lurking in the shadows, take in sweeping landscapes, and keep multiple windows open without feeling cramped. The 180Hz refresh rate and 1ms MPRT response time ensure buttery-smooth gameplay with lightning-fast reactions, letting you track every movement with zero ghosting or blur. And with FreeSync Premium technology, your GPU and monitor stay perfectly in sync, eliminating screen tearing and stuttering for a flawless experience.",
       "category": "laptops",
@@ -2110,13 +2106,50 @@
         "https://media.takealot.com/covers_images/3cbfda55e6344607b6d908a2c858290e/s-zoom.file",
         "https://media.takealot.com/covers_images/97c2acc0776e42faaef28e5cec0a0c45/s-zoom.file",
         "https://media.takealot.com/covers_images/d4a53835e68743e5b0abf9d9ea0ea4f7/s-zoom.file"
-
       ],
       "thumbnail": "https://media.takealot.com/covers_images/67add045d2b94194be72160ff0f28467/s-zoom.file"
     }
-
   ],
   "users": [
-
+    {
+      "id": "ffb1",
+      "firstName": "Teboho",
+      "lastName": "Nyombolo",
+      "username": "Tebza",
+      "email": "thulaninyombolo@gmail.com",
+      "password": "1234qwer"
+    },
+    {
+      "id": "49ce",
+      "firstName": "otshepahetse",
+      "lastName": "tinte",
+      "username": "titen",
+      "email": "titen@gmail.com",
+      "password": "12345qwe"
+    },
+    {
+      "id": "151d",
+      "firstName": "otshepahetse",
+      "lastName": "tinte",
+      "username": "tinte",
+      "email": "titen1@gmail.com",
+      "password": "1234qwer"
+    },
+    {
+      "id": "c152",
+      "firstName": "otshepahetse",
+      "lastName": "tinte",
+      "username": "titen",
+      "email": "lundi1@gmail.com",
+      "password": "123qwert"
+    },
+    {
+      "id": "c8a2",
+      "firstName": "otshepahetse",
+      "lastName": "Nyombolo",
+      "username": "titen",
+      "email": "lundi3@gmail.com",
+      "password": "12345qwer"
+    }
   ]
 }

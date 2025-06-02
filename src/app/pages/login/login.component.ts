@@ -12,7 +12,7 @@ import { UserService } from '../../services/user.service';
   template: `
     <div class="bg-slate-50 h-[25rem] w-[25rem] flex flex-col mx-auto mt-[12rem] rounded-lg shadow-md">
 
-      <app-button label="X" class="justify-self-end text-lg font-bold text-center ml-84 mt-[1rem] "  (onClick)="closeLogin()" />
+      <app-button label="X" class="justify-self-end text-lg font-bold text-center ml-84 mt-[1rem] "  (click)="closeLogin()" />
       <div class="flex flex-col items-center">
          <h1 class="text-2xl font-bold text-center text-slate-800 mb-8">
           Login
@@ -20,7 +20,7 @@ import { UserService } from '../../services/user.service';
          <form class="flex flex-col gap-3" (ngSubmit)="onSubmit()">
             <input type="text" placeholder="Email" name="email" [(ngModel)]="currentUser.email" class="w-full px-2 py-1 border text-center border-gray-300 rounded-md focus:outline-none" />
             <input type="password" placeholder="Password" name="password" [(ngModel)]="currentUser.password" class="w-full px-2 py-1 border text-center border-gray-300 rounded-md focus:outline-none" />
-            <app-button type="submit" label="Login" class=" bg-slate-300 text-center font-bold py-1 px-2 rounded-lg" />
+            <app-button type="submit" label="Login" class="text-center font-bold py-1 px-2 rounded-lg" />
          </form>
          <br>
          <p>Don't have an account? <a href="/register" class="text-slate-500 hover:underline">Register</a></p>

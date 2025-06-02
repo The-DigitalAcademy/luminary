@@ -11,7 +11,7 @@ import { NgIf } from '@angular/common';
   standalone: true,
   imports: [ PrimaryButtonComponent,  RouterLink, ButtonComponent, NgIf ],
   template: `
-    <div 
+    <div
       class="fixed top-0 left-0 w-full h-16 bg-white/80 backdrop-blur-md shadow-md border-b border-gray-300 flex justify-evenly items-center px-6 py-4 z-50"
     >
       <div class="flex items-center">
@@ -42,7 +42,7 @@ import { NgIf } from '@angular/common';
           class="text-gray-700 hover:bg-gray-100 px-3 py-2 rounded-md transition-colors duration-200 ease-in-out flex items-center gap-2 cursor-pointer">
           <i class="bi bi-heart"></i>
         </button>
-        
+
         <app-primary-button
   class="bg-transparent text-gray-700 px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200 ease-in-out flex items-center gap-2"
   label="{{ cartLabel() }}"
@@ -52,9 +52,9 @@ import { NgIf } from '@angular/common';
 
         <ng-container *ngIf="userService.currentUser(); else guestOptions">
           <app-button
-            class="bg-gray-300 font-bold px-3 py-2 rounded-lg"
+            class="font-bold px-3 py-2 rounded-lg cursor-pointer"
             label="Logout"
-            (onClick)="navigateToHome()"
+            (click)="navigateToHome()"
           />
           <span class="self-center">Welcome, {{ userService.currentUser()?.firstName }}</span>
         </ng-container>
@@ -63,12 +63,12 @@ import { NgIf } from '@angular/common';
           <app-button
             class="bg-transparent text-gray-700 font-bold px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200 ease-in-out cursor-pointer"
             label="Login"
-            (onClick)="navigateToLogin()"
+            (click)="navigateToLogin()"
           />
           <app-button
             class="bg-transparent text-gray-700 font-bold px-3 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200 ease-in-out cursor-pointer"
             label="Register"
-            (onClick)="navigateToRegister()"
+            (click)="navigateToRegister()"
           />
         </ng-template>
       </div>
