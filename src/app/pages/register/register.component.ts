@@ -13,7 +13,7 @@ import { UserService } from '../../services/user.service';
   template: `
     <div class="bg-slate-50 h-[36rem] w-[25rem] flex flex-col mx-auto mt-[12rem] rounded-lg shadow-md">
 
-      <app-button label="X" class="justify-self-end text-lg font-bold text-center ml-84 mt-[1rem] "  (onClick)="closeRegister()" />
+      <app-button label="X" class="justify-self-end text-lg font-bold text-center ml-84 mt-[1rem] "  (click)="closeRegister()" />
       <div class="flex flex-col items-center">
          <h1 class="text-2xl font-bold text-center text-slate-800 mb-8">
           Register
@@ -26,7 +26,7 @@ import { UserService } from '../../services/user.service';
             <input type="password" placeholder="Password" name="password" [(ngModel)]="user.password" class="w-full px-2 py-1 border text-center border-gray-300 rounded-md focus:outline-none" />
             <input type="password" placeholder="Confirm Password" name="confirmPassword" [(ngModel)]="confirmPassword" class="w-full px-2 py-1 border text-center border-gray-300 rounded-md focus:outline-none" />
 
-            <app-button type="submit" label="Register" class=" bg-slate-300 text-center font-bold py-1 px-2 rounded-lg" />
+            <app-button type="submit" label="Register" class="text-center font-bold py-1 px-2 rounded-lg" />
          </form>
          <br>
          <p>Already have an account? <a href="/login" class="text-slate-500 hover:underline">Login</a></p>
@@ -59,16 +59,29 @@ export class RegisterComponent {
     }else if(this.user.password.length < 6){
       alert('Password must be at least 6 characters long');
     }else{
-      this.userService.register(this.user).subscribe(user => {
-        if(user){
-          alert('User registered successfully');
-          this.router.navigate(['/home']);
-          this.user.firstName = '';
-          this.user.lastName = '';
-          this.user.username = '';
-          this.user.email = '';
-          this.user.password = '';
-        }
+      // this.userService.users().find((u) => u.email === this.user.email);
+      this.userService.checkEmail(this.user.email).subscribe({
+        next: (users ) => {
+          if(users && users.length > 0){
+            alert('Email already exists');
+          }else{
+            this.userService.register(this.user).subscribe({
+              next: (user) => {
+                if(user){
+                  this.userService.register(this.user);
+                  alert("welcome " + this.user.firstName);
+                  this.router.navigate(['/home']);
+                  this.user.firstName = '';
+                  this.user.lastName = '';
+                  this.user.username = '';
+                  this.user.email = '';
+                  this.user.password = '';
+                  this.confirmPassword = '';
+                }
+              }
+            });
+          }
+        },
       });
     }
     console.log(this.user);
