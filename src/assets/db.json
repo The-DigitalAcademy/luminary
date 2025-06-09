@@ -2150,6 +2150,14 @@
       "username": "titen",
       "email": "lundi3@gmail.com",
       "password": "12345qwer"
+    },
+    {
+      "id": "f0f1",
+      "firstName": "Teboho",
+      "lastName": "Nyombolo",
+      "username": "Tebza",
+      "email": "tebohonyombolo@hotmail.com",
+      "password": "1234qwer"
     }
   ]
 }

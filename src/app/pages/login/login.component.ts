@@ -44,6 +44,10 @@ export class LoginComponent {
     email: '',
     password: '',
   };
+  clearForm(){
+    this.currentUser.email = '';
+    this.currentUser.password = '';
+  }
 
    onSubmit() {
         if (
@@ -51,14 +55,17 @@ export class LoginComponent {
       !this.currentUser.email.includes('.')
     ) {
       alert('Please enter a valid email');
+      this.clearForm();
       return;
     }
     if (!this.currentUser.password) {
       alert('Please enter a password');
+      this.clearForm();
       return;
     }
     if (this.currentUser.password.length < 6) {
       alert('Password must be at least 6 characters long');
+      this.clearForm();
       return;
     }
 
@@ -70,8 +77,7 @@ export class LoginComponent {
             alert(`Login successful, welcome ${user.firstName}`);
             console.log(this.currentUser);
             this.userService.login(user);
-            this.currentUser.email = '';
-            this.currentUser.password = '';
+            this.clearForm();
           } else {
             alert(
               'Your email or password is incorrect or you have not registered'

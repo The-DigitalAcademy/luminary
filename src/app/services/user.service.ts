@@ -3,6 +3,7 @@ import { inject, Injectable, signal } from "@angular/core";
 import { User } from "../pages/register/user";
 import { Router } from "@angular/router";
 import { Observable } from "rxjs";
+import { environment } from "../../environments/environment.development";
 
 
 
@@ -14,7 +15,7 @@ export class UserService {
 
 
   private http = inject(HttpClient);
-  private apiURL = 'http://localhost:3000/users';
+  API:  string = environment.apiUsers;
 
   users = signal<User[]>([]);
   currentUser = signal<User | null>(null);
@@ -26,12 +27,12 @@ export class UserService {
     }
   }
   register(user: User): Observable<any> {
-    return this.http.post<any>(this.apiURL, user);
+    return this.http.post<any>(this.API, user);
   }
 
 
  checkEmail(email: string): Observable<any[]> {
-    return this.http.get<any[]>(`${this.apiURL}?email=${email}`);
+    return this.http.get<any[]>(`${this.API}?email=${email}`);
  }
 
  login(user: any) {

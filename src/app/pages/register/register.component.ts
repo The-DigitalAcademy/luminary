@@ -51,32 +51,43 @@ export class RegisterComponent {
   };
   confirmPassword = '';
 
+  clearForm(){
+    this.user.firstName = '';
+    this.user.lastName = '';
+    this.user.username = '';
+    this.user.email = '';
+    this.user.password = '';
+    this.confirmPassword = '';
+  }
+
   onSubmit() {
     if(!this.user.firstName || !this.user.lastName || !this.user.email || !this.user.password || !this.confirmPassword){
       alert('Please fill all the fields');
+      this.clearForm();
     }else if(this.user.password !== this.confirmPassword){
       alert('Passwords do not match');
+      this.clearForm();
     }else if(this.user.password.length < 6){
       alert('Password must be at least 6 characters long');
+      this.clearForm();
     }else{
-      // this.userService.users().find((u) => u.email === this.user.email);
       this.userService.checkEmail(this.user.email).subscribe({
         next: (users ) => {
-          if(users && users.length > 0){
+          if(!this.user.email.includes('@') ||
+          !this.user.email.includes('.')){
+            alert('Please enter a valid email');
+            this.clearForm();
+          }else if(users && users.length > 0){
             alert('Email already exists');
+            this.clearForm();
           }else{
             this.userService.register(this.user).subscribe({
               next: (user) => {
                 if(user){
                   this.userService.register(this.user);
-                  alert("welcome " + this.user.firstName);
-                  this.router.navigate(['/home']);
-                  this.user.firstName = '';
-                  this.user.lastName = '';
-                  this.user.username = '';
-                  this.user.email = '';
-                  this.user.password = '';
-                  this.confirmPassword = '';
+                  alert(`welcome,   ${this.user.firstName}`);
+                  this.userService.login(this.user);
+                  this.clearForm();
                 }
               }
             });
